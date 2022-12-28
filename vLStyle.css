@@ -1,0 +1,302 @@
+body {
+    margin: 4rem auto 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    line-height: 1.8rem;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #FB5607, #FF006E);
+    color: antiquewhite;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.main-header .logo {
+    margin: .5rem 0 .5rem 1rem;
+    padding: 0;
+    min-width: 170px;
+    font-family: Caveat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+}
+
+.main-header .logo:hover {
+    transform: scale(1.07);
+}
+
+.main-nav {
+    width: 80%;
+    display: flex;
+}
+
+.main-nav-list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 2rem 0 0;
+    padding: 0;
+}
+
+.main-nav-list li {
+    padding: 1.5rem 2rem 0;
+}
+
+.main-nav-list li:hover {
+    background-color: #FFBE0B;
+}
+
+.main-nav-list li:hover a {
+    color: black;
+}
+
+.main-nav-list li:hover .mn-res-list {
+    display: flex;
+}
+
+.mn-res-list {
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 3rem;
+    list-style: none;
+    transform: translate(-1.8rem, .2rem);
+}
+
+.mn-res-list li {
+    background: linear-gradient(to right, #FB5607, #FF006E);
+    text-align: center;
+    margin: 1px 0;
+    padding: .3rem .5rem;
+    border-radius: 5px;
+}
+
+.mn-res-list li:hover {
+    background: #FFBE0B;
+    cursor: pointer;
+}
+
+.hero {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    z-index: -1;
+}
+
+.hero-bg img {
+    width: 110%;
+    position: relative;
+    bottom: 17rem;
+}
+
+.hero-content {
+    text-align: center;
+    background: linear-gradient(to right, #FB5607, #FF006E);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    top: 10rem;
+}
+
+.hero-content .hero-title {
+    margin-bottom: 3rem;
+    color: antiquewhite;
+}
+
+.hero-content .lesson {
+    background-color: #FFBE0B;
+    color: black;
+    border: 3px solid;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 80px;
+}
+
+.hero-content .lesson:hover {
+    transform: scale(1.03);
+}
+
+.hero-content .socials {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem auto 0;
+    width: 80%;
+}
+
+
+.hero-content .socials img {
+    width: 3rem;
+}
+
+.hero-content .socials img:hover {
+    transform: scale(1.1);
+}
+
+.whats-new {
+    padding: 2rem 3rem 5rem;
+    margin: 4rem auto;
+    max-width: 1600px;
+    text-align: center;
+    background: linear-gradient(to right, #8338EC, #3A86FF);
+    color: antiquewhite;
+}
+
+.whats-new .welcome-title {
+    font-size: 3rem;
+}
+
+.whats-new img {
+    width: 30rem;
+    float: left;
+    margin: 1rem 2rem 1rem 0;
+    border-radius: 20px;
+}
+
+.reviews {
+    margin: 0 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1600px;
+    margin: 4rem auto;
+    padding: 2rem 3rem;
+}
+
+.reviews .title {
+    font-size: 2rem;
+}
+
+.review {
+    background: linear-gradient(to right, #FB5607, #FF006E);
+    color: antiquewhite;
+    border: 3px solid #8338EC;
+    border-radius: 20px;
+    width: fit-content;
+    padding: .1rem 0;
+    margin: 2rem 0;
+}
+
+.review .rev-name {
+    position: relative;
+    bottom: 1rem;
+    left: 3rem;
+    background: linear-gradient(to right, #8338EC, #3A86FF);
+    border-radius: 20px;
+    border: 3px solid white;
+    width: fit-content;
+    padding: .5rem 2rem;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.review .rev-rating {
+    letter-spacing: .5rem;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.useful {
+    background: linear-gradient(to right, #8338EC, #3A86FF);
+    color: antiquewhite;
+    text-align: center;
+    padding: 2rem 2rem 5rem 2rem;
+    max-width: 1600px;
+    margin: 4rem auto;
+}
+
+.useful .sec-title {
+    font-size: 2rem;
+}
+
+.useful .sec-info {
+    margin-bottom: 5rem;
+}
+
+.useful #bookLessNow {
+    background-color: #FFBE0B;
+    color: black;
+    border: 3px solid;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 80px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.useful #bookLessNow:hover {
+    transform: scale(1.03);
+}
+/*This aint working. Figure out why!*/
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #FB5607, #FF006E);
+    color: antiquewhite;
+    padding: 1rem 2rem;
+}
+
+.main-footer .copyright {
+    text-align: center;
+}
+
+.main-footer .footer-logo {
+    margin: 0;
+    font-family: Caveat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+.main-footer #footerLogo:hover {
+    transform: scale(1.07);
+}
+
+.main-footer .copyright p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.main-footer .links {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-footer .links a {
+    margin: .2rem 2rem;
+    font-size: 1rem;
+}
