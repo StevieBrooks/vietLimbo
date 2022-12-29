@@ -101,18 +101,17 @@ p {
 .hero {
     width: 100%;
     height: 500px;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-bg {
+    background: url(vLPics/jakob-owens-5F_c9i3JP0I-unsplash.jpg);
+    background-size: cover;
     position: absolute;
     z-index: -1;
-}
-
-.hero-bg img {
-    width: 110%;
-    position: relative;
-    bottom: 17rem;
+    width: 100%;
+    height: 100%;
 }
 
 .hero-content {
@@ -123,15 +122,25 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: fit-content;
-    margin: 0 auto;
+    width: 50%;
+    height: fit-content;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 0 2rem 2rem;
     position: relative;
-    top: 10rem;
+    top: 5rem;
+    z-index: 1;
 }
 
 .hero-content .hero-title {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     color: antiquewhite;
+}
+
+.hero-content .hero-para {
+    font-size: 1rem;
+    color: antiquewhite;
+    margin-bottom: 1.5rem;
 }
 
 .hero-content .lesson {
@@ -139,7 +148,7 @@ p {
     color: black;
     border: 3px solid;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 80px;
 }
 
@@ -150,13 +159,13 @@ p {
 .hero-content .socials {
     display: flex;
     justify-content: space-evenly;
-    margin: 3rem auto 0;
-    width: 80%;
+    margin: 1.5rem auto 0;
+    width: 70%;
 }
 
 
 .hero-content .socials img {
-    width: 3rem;
+    width: 2.5rem;
 }
 
 .hero-content .socials img:hover {
