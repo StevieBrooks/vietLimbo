@@ -59,7 +59,7 @@ p {
 }
 
 .main-nav-list li {
-    padding: 1.5rem 2rem 0;
+    padding: 1rem;
 }
 
 .main-nav-list li:hover {
@@ -275,11 +275,11 @@ p {
     align-items: center;
     background: linear-gradient(to right, #FB5607, #FF006E);
     color: antiquewhite;
-    padding: 1rem 2rem;
 }
 
 .main-footer .copyright {
     text-align: center;
+    padding: 0 2rem;
 }
 
 .main-footer .footer-logo {
@@ -298,14 +298,40 @@ p {
     font-size: 1rem;
 }
 
+.footer-socials {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+
+.footer-socials img {
+    width: 1.5rem;
+}
+
+.footer-socials img:hover {
+    transform: scale(1.1);
+}
+
 .main-footer .links {
-    width: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
     flex-wrap: wrap;
 }
 
 .main-footer .links a {
-    margin: .2rem 2rem;
+    margin: .2rem .9rem;
     font-size: 1rem;
+}
+
+@media(max-width: 715px) {
+    .main-header {
+        justify-content: center;
+    }
+    .main-nav {
+        display: none;
+    }
 }
