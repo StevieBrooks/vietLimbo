@@ -46,6 +46,7 @@ p {
 .main-nav {
     width: 80%;
     display: flex;
+    align-items: center;
 }
 
 .main-nav-list {
@@ -53,7 +54,6 @@ p {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     margin: 0 2rem 0 0;
     padding: 0;
 }
@@ -98,11 +98,24 @@ p {
     cursor: pointer;
 }
 
+.main-nav-burger {
+    display: none;
+}
+
+.burger-slice {
+    width: 30px;
+    height: 5px;
+    background-color: antiquewhite;
+    margin: 5px;
+    border-radius: 10px;
+}
+
 .hero {
     width: 100%;
-    height: 600px;
+    height: 550px;
     display: flex;
     justify-content: center;
+    border-bottom: 5px solid antiquewhite;
 }
 
 .hero-bg img {
@@ -172,7 +185,7 @@ p {
 }
 
 .whats-new {
-    padding: 2rem 3rem 5rem;
+    padding: 2rem 3rem 3rem;
     margin: auto;
     max-width: 1600px;
     text-align: center;
@@ -199,7 +212,7 @@ p {
     align-items: center;
     max-width: 1600px;
     margin: 4rem auto;
-    padding: 2rem 3rem;
+    padding: 0 3rem;
 }
 
 .reviews .title {
@@ -305,7 +318,7 @@ p {
 
 
 .footer-socials img {
-    width: 1.5rem;
+    width: 1.8rem;
 }
 
 .footer-socials img:hover {
@@ -327,10 +340,10 @@ p {
 }
 
 @media(max-width: 715px) {
-    .main-header {
-        justify-content: center;
+    .main-nav-burger {
+        display: block;
     }
-    .main-nav {
+    .main-nav-list {
         display: none;
     }
 }
