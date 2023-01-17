@@ -37,6 +37,7 @@ p {
     min-width: 170px;
     font-family: Caveat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2.5rem;
+    transition: .3s ease;
 }
 
 .main-header .logo:hover {
@@ -58,6 +59,7 @@ p {
 
 .main-nav-list li {
     padding: 1.2rem 1.1rem 0;
+    transition: .3s ease;
 }
 
 .main-nav-list li:hover {
@@ -89,6 +91,7 @@ p {
     margin: 1px 0;
     padding: .3rem .5rem;
     border-radius: 5px;
+    transition: .1s ease;
 }
 
 .mn-res-list li:hover {
@@ -101,6 +104,7 @@ p {
     position: relative;
     right: 1rem;
     padding: .9rem 0 0;
+    transition: .3s ease;
 }
 
 .main-nav-burger:hover {
@@ -117,7 +121,7 @@ p {
     display: none;
 }
 
-.burger-slice {
+.bar {
     width: 30px;
     height: 5px;
     background-color: antiquewhite;
@@ -177,6 +181,7 @@ p {
     font-size: 1.5rem;
     padding: 1rem 2rem;
     border-radius: 80px;
+    transition: .3s ease;
 }
 
 .hero-content .lesson:hover {
@@ -193,6 +198,7 @@ p {
 
 .hero-content .socials img {
     width: 2.5rem;
+    transition: .3s ease;
 }
 
 .hero-content .socials img:hover {
@@ -289,12 +295,12 @@ p {
     border-radius: 80px;
     width: fit-content;
     margin: 0 auto;
+    transition: .3s ease;
 }
 
 .useful #bookLessNow:hover {
     transform: scale(1.03);
 }
-/*This aint working. Figure out why!*/
 
 .main-footer {
     display: flex;
@@ -313,10 +319,11 @@ p {
     margin: 0;
     font-family: Caveat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2rem;
+    transition: .3s ease;
 }
 
 .main-footer #footerLogo:hover {
-    transform: scale(1.07);
+    transform: scale(1.04);
 }
 
 .main-footer .copyright p {
@@ -334,6 +341,7 @@ p {
 
 .footer-socials img {
     width: 1.8rem;
+    transition: .3s ease;
 }
 
 .footer-socials img:hover {
@@ -358,7 +366,37 @@ p {
     .main-nav-burger {
         display: block;
     }
+    .main-nav-burger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .main-nav-burger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(0, .9rem);
+    }
+    .main-nav-burger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(0, -.9rem);
+    }
     .main-nav-list {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transform: translate(3rem, 0);
+        height: 100vh;
+        padding: 1.5rem 0;
+        position: absolute;
+        background: linear-gradient(to right, #FB5607, #FF006E);
+        transition: .3s ease;
+    }
+    .main-nav-list li {
+        padding: 1.5rem;
+    }
+    .mn-res-list {
+        transform: translate(-12rem, 10rem);
+        transition: .5s ease;
+    }
+    .mn-res-list:hover li {
+        background-color: #FFBE0B;
+    }
+    .main-nav-list.active {
+        transform: translate(-10rem, 0);
     }
 }
