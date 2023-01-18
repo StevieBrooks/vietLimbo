@@ -20,6 +20,16 @@ p {
     line-height: 1.8rem;
 }
 
+.overlay {
+    background-color: black;
+    width: 100%;
+    z-index: 4;
+    position: fixed;
+    height: 100%;
+    opacity: .6;
+    display: none;
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -368,7 +378,30 @@ p {
     font-size: 1rem;
 }
 
+/* ALPHABET CARDS */
+.alpha-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 1rem 3rem;
+    max-width: 1600px;
+}
+
+.alpha-card {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 1.5rem;
+    background: linear-gradient(to right, #3A86FF, #8338EC);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media(max-width: 715px) {
+    .overlay.active {
+        display: block;
+    }
     .main-nav-burger {
         display: block;
     }
