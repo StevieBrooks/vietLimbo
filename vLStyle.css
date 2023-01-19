@@ -379,12 +379,21 @@ p {
 }
 
 /* ALPHABET CARDS */
+.alphabet-main {
+    max-width: 1600px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.alphabet-main h1 {
+    text-align: center;
+}
+
 .alpha-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 2rem 1rem 3rem;
-    max-width: 1600px;
 }
 
 .alpha-card {
@@ -392,10 +401,24 @@ p {
     height: 200px;
     border-radius: 10px;
     margin: 1.5rem;
+    font-size: 4.3rem;
+    font-weight: bold;
+    color: antiquewhite;
     background: linear-gradient(to right, #3A86FF, #8338EC);
     display: flex;
     justify-content: center;
     align-items: center;
+    border-left: 2px solid #8338EC;
+    border-bottom: 2px solid #8338EC;
+    box-shadow: 4px -4px 3px antiquewhite,
+                5px -5px 0 black;
+}
+
+.alpha-card:hover {
+    transform: translate(4px, -4px);
+    background: #8338EC;
+    box-shadow: none;
+    cursor: pointer;
 }
 
 @media(max-width: 715px) {
@@ -440,6 +463,16 @@ p {
     }
     .whats-new img {
         width: 50%;
+    }
+    .alpha-cards {
+        padding: 0;
+    }
+    .alpha-card {
+        margin: .7rem;
+        width: 75px;
+        height: 100px;
+        font-size: 2.2rem;
+        border-radius: 5px;
     }
 }
 
