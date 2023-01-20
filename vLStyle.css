@@ -385,7 +385,7 @@ p {
     padding: 2rem;
 }
 
-.alphabet-main h1 {
+.alphabet-main h1, .alphabet-main h2 {
     text-align: center;
 }
 
@@ -412,6 +412,14 @@ p {
     border-bottom: 2px solid #8338EC;
     box-shadow: 4px -4px 3px antiquewhite,
                 5px -5px 0 black;
+}
+
+.alpha-cards .small-font {
+    font-size: 2.8rem;
+}
+
+.alpha-cards .tiny-font {
+    font-size: 2rem;
 }
 
 .alpha-card:hover {
@@ -473,6 +481,14 @@ p {
         height: 100px;
         font-size: 2.2rem;
         border-radius: 5px;
+    }
+    .alpha-cards .small-font {
+        font-size: 1.5rem;
+    }
+    .alpha-cards .tiny-font p {
+        font-size: 1.5rem;
+        position: relative;
+        left: .8rem;
     }
 }
 
