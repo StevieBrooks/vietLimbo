@@ -41,7 +41,7 @@ p {
 }
 
 .main-header .logo {
-    margin: .5rem 0 .5rem 1rem;
+    margin: .5rem 0 .7rem 1rem;
     padding: 0;
     min-width: 170px;
     color: antiquewhite;
@@ -51,7 +51,9 @@ p {
 }
 
 .main-header .logo img {
-    width: 2rem;
+    width: 2.5rem;
+    position: relative;
+    top: .3rem;
 }
 
 .main-header .logo:hover {
@@ -67,12 +69,12 @@ p {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: 0 1.5rem 0 0;
+    margin: 0;
     padding: 0;
 }
 
 .main-nav-list li {
-    padding: 1.2rem .75rem 0;
+    padding: 1.5rem 1rem 0;
     transition: .3s ease;
 }
 
@@ -83,7 +85,7 @@ p {
 }
 
 .main-nav-list li:hover {
-    background: linear-gradient(to right, #8338EC, #3A86FF);
+    background: linear-gradient(to right, #FFBE0B, #FB5607);
 }
 
 .main-nav-list li:hover a {
@@ -100,23 +102,25 @@ p {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 3rem;
+    top: 3.5rem;
     list-style: none;
-    transform: translate(-1.8rem, .2rem);
+    transform: translate(-2.15rem, .2rem);
 }
 
 .mn-res-list li {
     background: linear-gradient(to right, #FB5607, #FFBE0B);
     text-align: center;
-    margin: 1px 0;
-    padding: .3rem .5rem;
+    margin: 3px 0;
+    padding: .5rem 1rem;
+    border: 1px solid transparent;
     border-radius: 5px;
     transition: .1s ease;
 }
 
 .mn-res-list li:hover {
-    background: linear-gradient(to right, #8338EC, #3A86FF);
+    background: linear-gradient(to right, #FFBE0B, #FB5607);
     cursor: pointer;
+    border: 1px solid #2e2e2e;
 }
 
 .main-nav-burger {
@@ -444,7 +448,7 @@ p {
     }
 }
 
-@media(max-width: 715px) {
+@media(max-width: 750px) {
     .overlay.active {
         display: block;
     }
@@ -475,7 +479,7 @@ p {
         padding: 1.5rem;
     }
     .mn-res-list {
-        transform: translate(-12rem, 10rem);
+        transform: translate(-13rem, 9rem);
         transition: .5s ease;
     }
     .mn-res-list:hover li {
