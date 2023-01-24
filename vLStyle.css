@@ -50,6 +50,10 @@ p {
     transition: .3s ease;
 }
 
+.main-header .logo img {
+    width: 2rem;
+}
+
 .main-header .logo:hover {
     transform: scale(1.05);
 }
@@ -63,12 +67,12 @@ p {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: 0 2rem 0 0;
+    margin: 0 1.5rem 0 0;
     padding: 0;
 }
 
 .main-nav-list li {
-    padding: 1.2rem 1.1rem 0;
+    padding: 1.2rem .75rem 0;
     transition: .3s ease;
 }
 
@@ -79,7 +83,7 @@ p {
 }
 
 .main-nav-list li:hover {
-    background-color: #FFBE0B;
+    background: linear-gradient(to right, #8338EC, #3A86FF);
 }
 
 .main-nav-list li:hover a {
@@ -111,7 +115,7 @@ p {
 }
 
 .mn-res-list li:hover {
-    background: #FFBE0B;
+    background: linear-gradient(to right, #8338EC, #3A86FF);
     cursor: pointer;
 }
 
