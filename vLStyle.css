@@ -152,7 +152,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
-    border-bottom: 5px solid antiquewhite;
+    margin-bottom: 5rem;
 }
 
 .hero-bg {
@@ -326,6 +326,7 @@ p {
     align-items: center;
     background: linear-gradient(to right, #FB5607, #FF006E);
     color: antiquewhite;
+    margin-top: 5rem;
 }
 
 .main-footer .copyright {
@@ -429,6 +430,12 @@ p {
     background: #8338EC;
     box-shadow: none;
     cursor: pointer;
+}
+
+@media(min-width: 1700px) {
+    .whats-new, .useful {
+        border-radius: 20px;
+    }
 }
 
 @media(max-width: 715px) {
