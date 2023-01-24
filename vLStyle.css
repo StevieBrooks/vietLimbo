@@ -212,6 +212,7 @@ p {
 
 .hero-content .lesson:hover {
     transform: scale(1.03);
+    background: linear-gradient(to right, #FFBE0B, #FB5607);
 }
 
 .hero-content .socials {
@@ -327,6 +328,7 @@ p {
 
 .useful #bookLessNow:hover {
     transform: scale(1.03);
+    background: linear-gradient(to right, #FFBE0B, #FB5607);
 }
 
 .main-footer {
@@ -390,6 +392,7 @@ p {
     margin: .2rem .8rem;
     font-size: 1rem;
 }
+
 
 /* ALPHABET CARDS */
 .alphabet-main {
