@@ -149,16 +149,18 @@ p {
     width: 100%;
     height: 550px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    overflow: hidden;
     border-bottom: 5px solid antiquewhite;
 }
 
-.hero-bg img {
-    z-index: -1;
+.hero-bg {
+    background: url(vLPics/jakob-owens-5F_c9i3JP0I-unsplash.jpg);
     width: 100%;
-    height: 120%;
-    position: absolute;
-    left: 0;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 .hero-content {
@@ -175,7 +177,7 @@ p {
     margin-right: 2rem;
     padding: 0 2rem 2rem;
     position: relative;
-    top: 5rem;
+    bottom: 30rem;
     z-index: 1;
 }
 
@@ -495,13 +497,16 @@ p {
 @media (max-width: 600px) {
     .hero-content {
         width: 60%;
-        top: 7rem;
+        bottom: 27rem;
     }
     .hero-para {
         display: none;
     }
     .whats-new img {
         width: 100%;
+    }
+    .reviews .review .rev-name {
+        left: 1rem;
     }
     .main-footer {
         flex-direction: column;
