@@ -409,7 +409,7 @@ p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 2rem 1rem 3rem;
+    padding: 0 1rem;
 }
 
 .alpha-card {
