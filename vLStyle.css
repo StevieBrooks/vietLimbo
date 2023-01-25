@@ -502,7 +502,13 @@ p {
     border: 2px solid;
 }
 
-.admin-bottom .setting-one {
+.alpha-game-admin .ab-setting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alpha-game-admin .setting-one .setting-choices {
     display: flex;
 }
 
@@ -516,6 +522,11 @@ p {
 
 .admin-bottom .setting-one .player img {
     width: 100%;
+}
+
+.alpha-game-admin .admin-buttons {
+    display: flex;
+    justify-content: space-around;
 }
 
 @media(min-width: 1700px) {
