@@ -464,6 +464,60 @@ p {
     cursor: pointer;
 }
 
+
+/*ALPHAGAME*/
+.alpha-game-shell {
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #FFBE0B;
+}
+
+.alpha-game-board {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.alpha-game-board .box {
+    width: 4.2vw;
+    height: 4.2vw;
+    border: 1px solid;
+    background-color: #3A86FF;
+    font-size: 70%;
+}
+
+.alpha-game-admin {
+    grid-column: 2 / 3;
+}
+
+.alpha-game-admin .admin-top {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid;
+}
+
+.admin-bottom .setting-one {
+    display: flex;
+}
+
+.admin-bottom .setting-one .player {
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.admin-bottom .setting-one .player img {
+    width: 100%;
+}
+
 @media(min-width: 1700px) {
     .whats-new, .useful {
         border-radius: 20px;
