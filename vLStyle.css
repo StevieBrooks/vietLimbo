@@ -481,6 +481,18 @@ p {
     padding: 1rem;
 }
 
+.alpha-game-snake, .alpha-game-ladder {
+    position: absolute;
+    top: 4rem;
+    left: 1rem;
+    width: 15vw;
+}
+
+.alpha-game-ladder {
+    top: 20rem;
+    left: 22rem;
+}
+
 .alpha-game-board .box {
     width: 4.2vw;
     height: 4.2vw;
