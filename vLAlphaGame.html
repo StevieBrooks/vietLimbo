@@ -43,6 +43,12 @@
 
         <section class="alpha-game-shell">
             <div class="alpha-game-board">
+
+                <img src="vLPics/snake.png" class="alpha-game-snake" alt="">
+                <img src="vLPics/ladder.png" class="alpha-game-ladder" alt="">
+                <img src="" class="alpha-game-player" alt="">
+                <img src="" class="alpha-game-comp" alt="">
+
                 <div class="box box91">91</div>
                 <div class="box box92">92</div>
                 <div class="box box93">93</div>
@@ -143,35 +149,57 @@
                 <div class="box box8">8</div>
                 <div class="box box9">9</div>
                 <div class="box box10">10</div>
+                
             </div>
             <div class="alpha-game-admin">
                 <div class="admin-top">
                     <div class="admin-dice">Dice img</div>
                     <div class="admin-speaker">Speaker img</div>
+                    <div class="clock">
+                        <p>Time</p>
+                        <p>00:00</p>
+                    </div>
                 </div>
                 <div class="admin-bottom">
-                    <div class="setting-one">
-                        <p>Choose player</p>
-                        <div class="player player1"><img src="vLPics/elephant.png" alt=""></div>
-                        <div class="player player2"><img src="vLPics/buffalo.png" alt=""></div>
-                        <div class="player player3"><img src="vLPics/monkey.png" alt=""></div>
+                    <div class="ab-setting setting-one">
+                        <div class="setting-title">
+                            <p>Choose player</p>
+                        </div>
+                        <div class="setting-choices">
+                            <div class="player player1"><img src="vLPics/elephant.png" alt=""></div>
+                            <div class="player player2"><img src="vLPics/buffalo.png" alt=""></div>
+                            <div class="player player3"><img src="vLPics/monkey.png" alt=""></div>
+                        </div>
                     </div>
-                    <div class="setting-two">
-                        <p>Play Against</p>
-                        <label for="commy">Computer</label>
-                        <input type="radio" name="play-against" id="commy">
-                        <label for="clock">Clock</label>
-                        <input type="radio" name="play-against" id="clock">
+                    <div class="ab-setting setting-two">
+                        <div class="setting-title">
+                            <p>Play Against</p>
+                        </div>
+                        <div class="setting-choices">
+                            <label for="commy">Computer</label>
+                            <input type="radio" name="play-against" id="commy">
+                            <label for="clock">Clock</label>
+                            <input type="radio" name="play-against" id="clock">
+                        </div>
                     </div>
-                    <div class="setting-three">
-                        <p>Difficulty</p>
-                        <label for="easy">Easy</label>
-                        <input type="radio" name="difficulty" id="easy">
-                        <label for="medium">Medium</label>
-                        <input type="radio" name="difficulty" id="medium">
-                        <label for="hard">Hard</label>
-                        <input type="radio" name="difficulty" id="hard">
+                    <div class="ab-setting setting-three">
+                        <div class="setting-title">
+                            <p>Difficulty</p>
+                        </div>
+                        <div class="setting-choices">
+                            <label for="easy">Easy</label>
+                            <input type="radio" name="difficulty" id="easy">
+                            <label for="medium">Medium</label>
+                            <input type="radio" name="difficulty" id="medium">
+                            <label for="hard">Hard</label>
+                            <input type="radio" name="difficulty" id="hard">
+                        </div>
                     </div>
+                </div>
+                <div class="admin-buttons">
+                    <button>Roll Dice</button>
+                    <button>Repeat</button>
+                    <button>Reset</button>
                 </div>
             </div>
         </section>
