@@ -33,18 +33,20 @@ console.log(rect.top, rect.right, rect.bottom, rect.left);
 // learn more about this - SO 'javascript location of element'
 
 // Players
-const alphaGamePlayer = document.querySelector('.alpha-game-player');
-const alphaGameComp = document.querySelector('.alpha-game-comp');
+const alphaSnaLadPlayer = document.querySelector('.alpha-snalad-player');
+const alphaSnaLadComp = document.querySelector('.alpha-snalad-comp');
 
 // Choose Player
 const player = document.querySelectorAll('.player');
 player.forEach((p) => {
     p.addEventListener('click', () => {
         let playerIconWidth = (rect.right - rect.left) * 1.2;
-        alphaGamePlayer.src = p.children[0].src;
-        alphaGamePlayer.style.width = `${playerIconWidth}px`;
-        alphaGamePlayer.style.position = 'absolute';
-        alphaGamePlayer.style.top = `${rect.top}px`;
+        alphaSnaLadPlayer.src = p.children[0].src;
+        alphaSnaLadPlayer.style.width = `${playerIconWidth}px`;
+        alphaSnaLadPlayer.style.position = 'absolute';
+        alphaSnaLadPlayer.style.top = `${rect.top}px`;
         // positioning this way dont work because users scroll on screen
     })
 })
+
+console.log(box[2]);

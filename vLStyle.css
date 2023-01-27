@@ -413,7 +413,7 @@ p {
 }
 
 
-/* ALPHABET CARDS */
+/* vLALPHACARDS */
 .alphabet-main {
     max-width: 1600px;
     margin: auto;
@@ -465,8 +465,8 @@ p {
 }
 
 
-/*ALPHAGAME*/
-.alpha-game-shell {
+/* vLALPHAGAME */
+.alpha-snalad-shell {
     width: 98%;
     margin: auto;
     display: grid;
@@ -474,26 +474,26 @@ p {
     background-color: #FFBE0B;
 }
 
-.alpha-game-board {
+.alpha-snalad-board {
     grid-column: 1 / 2;
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
 }
 
-.alpha-game-snake, .alpha-game-ladder {
+.alpha-snalad-snake, .alpha-snalad-ladder {
     position: absolute;
     top: 4rem;
     left: 1rem;
     width: 15vw;
 }
 
-.alpha-game-ladder {
+.alpha-snalad-ladder {
     top: 20rem;
     left: 22rem;
 }
 
-.alpha-game-board .box {
+.alpha-snalad-board .box {
     width: 4.2vw;
     height: 4.2vw;
     border: 1px solid;
@@ -501,11 +501,11 @@ p {
     font-size: 70%;
 }
 
-.alpha-game-admin {
+.alpha-snalad-admin {
     grid-column: 2 / 3;
 }
 
-.alpha-game-admin .admin-top {
+.alpha-snalad-admin .snalad-admin-top {
     width: 100%;
     height: 100px;
     display: flex;
@@ -514,17 +514,17 @@ p {
     border: 2px solid;
 }
 
-.alpha-game-admin .ab-setting {
+.alpha-snalad-admin .ab-setting {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.alpha-game-admin .setting-one .setting-choices {
+.alpha-snalad-admin .setting-one .setting-choices {
     display: flex;
 }
 
-.admin-bottom .setting-one .player {
+.snalad-admin-bottom .setting-one .player {
     width: 50px;
     height: 50px;
     border: 2px solid;
@@ -532,11 +532,11 @@ p {
     margin: 1rem;
 }
 
-.admin-bottom .setting-one .player img {
+.snalad-admin-bottom .setting-one .player img {
     width: 100%;
 }
 
-.alpha-game-admin .admin-buttons {
+.alpha-snalad-admin .snalad-admin-buttons {
     display: flex;
     justify-content: space-around;
 }
