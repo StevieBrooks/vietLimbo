@@ -338,6 +338,9 @@ p {
     background: linear-gradient(to right, #FB5607, #FFBE0B);
     color: #2e2e2e;
     margin-top: 5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .main-footer .copyright {
@@ -477,6 +480,22 @@ p {
     transform: scale(1.03);
     cursor: pointer;
 }
+
+
+/* THANKS PAGE */
+.thanks-bod .thank-you {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    margin: 5rem auto;
+}
+
+.thanks-bod .thank-you img {
+    width: 40%;
+    margin-right: 2rem;
+}
+
 
 /* vLALPHACARDS */
 .alphabet-main {
@@ -672,6 +691,13 @@ p {
         font-size: 1.5rem;
         position: relative;
         left: .8rem;
+    }
+    .thanks-bod .thank-you {
+        flex-direction: column;
+        text-align: center;
+    }
+    .thanks-bod .thank-you img {
+        width: 300px;
     }
 }
 
