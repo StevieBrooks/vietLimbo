@@ -338,9 +338,6 @@ p {
     background: linear-gradient(to right, #FB5607, #FFBE0B);
     color: #2e2e2e;
     margin-top: 5rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 .main-footer .copyright {
