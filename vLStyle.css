@@ -253,7 +253,6 @@ p {
 }
 
 .reviews {
-    margin: 0 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -393,82 +392,28 @@ p {
     font-size: 1rem;
 }
 
+
 /* ABOUT PAGE */
 .about-bod .hero-bg {
     background: url(vLPics/hero-about-pexels-markus-winkler-5156618.jpg);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: 30% 50%;
-}
-
-.about-bod .hero-content {
-    width: fit-content;
-    margin-left: 2rem;
-    margin-right: 0;
-    padding: 0 1rem;
-    position: relative;
-    bottom: 12rem;
-    z-index: 1;
 }
 
 /* SERVICES PAGE */
 .services-bod .hero-bg {
     background: url(vLPics/hero-services-pexels-pixabay-267669.jpg);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: 30% 50%;
 }
 
-.about-bod .hero-content {
-    width: fit-content;
-    margin-left: 2rem;
-    margin-right: 0;
-    padding: 0 1rem;
-    position: relative;
-    bottom: 12rem;
-    z-index: 1;
-}
+
 
 /* RESOUCRES PAGE */
 .resources-bod .hero-bg {
     background: url(vLPics/hero-resources-pexels-magda-ehlers-1337387.jpg);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: 30% 50%;
-}
-
-.about-bod .hero-content {
-    width: fit-content;
-    margin-left: 2rem;
-    margin-right: 0;
-    padding: 0 1rem;
-    position: relative;
-    bottom: 12rem;
-    z-index: 1;
 }
 
 /* BLOG PAGE */
 .blog-bod .hero-bg {
     background: url(vLPics/hero-blog-pexels-jess-bailey-designs-768474.jpg);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: 30% 50%;
 }
-
-.about-bod .hero-content {
-    width: fit-content;
-    margin-left: 2rem;
-    margin-right: 0;
-    padding: 0 1rem;
-    position: relative;
-    bottom: 12rem;
-    z-index: 1;
-}
-
 
 /* CONTACT PAGE */
 .contact-bod .hero-bg {
@@ -477,14 +422,6 @@ p {
     height: 100%;
     background-size: cover;
     background-position: 70% 70%;
-}
-
-.contact-bod .hero-content {
-    width: fit-content;
-    padding: 0 3rem;
-    position: relative;
-    bottom: 30rem;
-    z-index: 1;
 }
 
 .contact-bod .contact-intro, .contact-bod .contact-form-section {
@@ -535,6 +472,34 @@ p {
     cursor: pointer;
 }
 
+/* PAGES */
+.about-bod .hero-bg, .services-bod .hero-bg, .resources-bod .hero-bg, .blog-bod .hero-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 30% 50%;
+}
+
+.about-bod .hero-content, .services-bod .hero-content, .resources-bod .hero-content,
+.blog-bod .hero-content, .contact-bod .hero-content {
+    font-size: 1.5rem;
+    width: fit-content;
+    padding: 0 3rem;
+    position: relative;
+    bottom: 30rem;
+    z-index: 1;
+}
+
+.about-bod .intro-section, .services-bod .intro-section, .resources-bod .intro-section, 
+.blog-bod .intro-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1600px;
+    margin: 4rem auto;
+    padding: 0 3rem;
+}
 
 /* THANKS PAGE */
 .thanks-bod .thank-you {
@@ -549,7 +514,6 @@ p {
     width: 40%;
     margin-right: 2rem;
 }
-
 
 /* vLALPHACARDS */
 .alphabet-main {
@@ -601,7 +565,6 @@ p {
     box-shadow: none;
     cursor: pointer;
 }
-
 
 /* vLALPHAGAME */
 .alpha-snalad-shell {
