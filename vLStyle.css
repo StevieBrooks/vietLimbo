@@ -395,7 +395,64 @@ p {
 
 /* ABOUT PAGE */
 .about-bod .hero-bg {
-    background: url(vLPics/11.jpg);
+    background: url(vLPics/hero-about-pexels-markus-winkler-5156618.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 30% 50%;
+}
+
+.about-bod .hero-content {
+    width: fit-content;
+    margin-left: 2rem;
+    margin-right: 0;
+    padding: 0 1rem;
+    position: relative;
+    bottom: 12rem;
+    z-index: 1;
+}
+
+/* SERVICES PAGE */
+.services-bod .hero-bg {
+    background: url(vLPics/hero-services-pexels-pixabay-267669.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 30% 50%;
+}
+
+.about-bod .hero-content {
+    width: fit-content;
+    margin-left: 2rem;
+    margin-right: 0;
+    padding: 0 1rem;
+    position: relative;
+    bottom: 12rem;
+    z-index: 1;
+}
+
+/* RESOUCRES PAGE */
+.resources-bod .hero-bg {
+    background: url(vLPics/hero-resources-pexels-magda-ehlers-1337387.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 30% 50%;
+}
+
+.about-bod .hero-content {
+    width: fit-content;
+    margin-left: 2rem;
+    margin-right: 0;
+    padding: 0 1rem;
+    position: relative;
+    bottom: 12rem;
+    z-index: 1;
+}
+
+/* BLOG PAGE */
+.blog-bod .hero-bg {
+    background: url(vLPics/hero-blog-pexels-jess-bailey-designs-768474.jpg);
     width: 100%;
     height: 100%;
     background-size: cover;
