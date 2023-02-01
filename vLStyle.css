@@ -403,7 +403,57 @@ p {
     background: url(vLPics/hero-services-pexels-pixabay-267669.jpg);
 }
 
+.services-section {
+    text-align: center;
+    display: flex;
+    max-width: 1600px;
+    margin: 4rem auto;
+    padding: 0 3rem;
+}
 
+.service-card {
+    margin: 0 1rem;
+    background-color: rgb(255, 190, 11, .5);
+    border-radius: 10px;
+}
+
+.service-card .service-header {
+    background: linear-gradient(to right, #8338EC, #3A86FF);
+    color: antiquewhite;
+    margin: 0;
+    padding: .5rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.service-card .service-header h4 {
+    margin: .7rem 0 ;
+}
+
+.service-card .service-body {
+    padding: 0 .5rem;
+}
+
+.service-card .service-body .info {
+    font-size: 1rem;
+}
+
+.service-card .service-footer button {
+    background-color: #FFBE0B;
+    color: black;
+    border: 2px solid;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border-radius: 80px;
+    width: fit-content;
+    margin: 0 auto 1.5rem;
+    transition: .3s ease;
+}
+
+.service-card .service-footer button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(to right, #FFBE0B, #FB5607);
+    cursor: pointer;
+}
 
 /* RESOUCRES PAGE */
 .resources-bod .hero-bg {
@@ -691,6 +741,16 @@ p {
     .whats-new img {
         width: 50%;
     }
+    /* SERVICES */
+    .services-section {
+        flex-direction: column;
+        margin: 0;
+    }
+    .services-section .service-card {
+        margin-bottom: 2rem;
+    }
+
+
     .alpha-cards {
         padding: 0;
     }
