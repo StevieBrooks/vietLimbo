@@ -7,7 +7,6 @@ body {
 
 a {
     text-decoration: none;
-    color: #2e2e2e;
     margin: 0;
     padding: 0;
 }
@@ -33,7 +32,7 @@ p {
 .main-header {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to right, #FB5607, #FFBE0B);
+    background: linear-gradient(to right, #004E64, #00A5CF);
     position: fixed;
     top: 0;
     width: 100%;
@@ -74,22 +73,23 @@ p {
 }
 
 .main-nav-list li {
-    padding: 1.5rem 1rem 0;
+    padding: 1.5rem 1.5rem 0;
     transition: .3s ease;
 }
 
 .main-nav-list a {
+    color: antiquewhite;
     display: block;
     width: 100%;
     height: 100%;
 }
 
 .main-nav-list li:hover {
-    background: linear-gradient(to right, #FFBE0B, #FB5607);
+    background: linear-gradient(to right, #004E64, #00A5CF);
 }
 
 .main-nav-list li:hover a {
-    color: black;
+    color: antiquewhite;
 }
 
 .main-nav-list li:hover .mn-res-list {
@@ -108,7 +108,7 @@ p {
 }
 
 .mn-res-list li {
-    background: linear-gradient(to right, #FB5607, #FFBE0B);
+    background: linear-gradient(to right, #004E64, #00A5CF);
     text-align: center;
     margin: 3px 0;
     padding: .5rem 1rem;
@@ -118,7 +118,7 @@ p {
 }
 
 .mn-res-list li:hover {
-    background: linear-gradient(to right, #FFBE0B, #FB5607);
+    background: linear-gradient(to right, #00A5CF, #004E64);
     cursor: pointer;
     border: 1px solid #2e2e2e;
 }
@@ -148,7 +148,7 @@ p {
 .bar {
     width: 30px;
     height: 5px;
-    background-color: #2e2e2e;
+    background-color: antiquewhite;
     margin: 5px;
     border-radius: 10px;
 }
@@ -173,7 +173,7 @@ p {
 
 .hero-content {
     text-align: center;
-    background: linear-gradient(to right, #FB5607, #FFBE0B);
+    background: linear-gradient(to right, #00A5CF, #9FFFCB);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -201,7 +201,7 @@ p {
 }
 
 .hero-content .lesson {
-    background-color: #FFBE0B;
+    background-color: #25A18E;
     color: black;
     border: 3px solid;
     font-size: 1.5rem;
@@ -212,7 +212,7 @@ p {
 
 .hero-content .lesson:hover {
     transform: scale(1.03);
-    background: linear-gradient(to right, #FFBE0B, #FB5607);
+    background: #7AE582;
     font-style: italic;
 }
 
@@ -238,8 +238,8 @@ p {
     margin: auto;
     max-width: 1600px;
     text-align: center;
-    background: linear-gradient(to right, #8338EC, #3A86FF);
-    color: antiquewhite;
+    background: linear-gradient(to right, #00A5CF, #9FFFCB);
+    color: #2e2e2e;
 }
 
 .whats-new .welcome-title {
@@ -268,9 +268,9 @@ p {
 }
 
 .review {
-    background: linear-gradient(to right, #FB5607, #FFBE0B);
+    background: linear-gradient(to right, #00A5CF, #9FFFCB);
     color: #2e2e2e;
-    border: 3px solid #8338EC;
+    border: 3px solid #25A18E;
     border-radius: 20px;
     width: fit-content;
     padding: .1rem 0;
@@ -281,7 +281,7 @@ p {
     position: relative;
     bottom: 1rem;
     left: 3rem;
-    background: linear-gradient(to right, #8338EC, #3A86FF);
+    background: #25A18E;
     border-radius: 20px;
     border: 3px solid antiquewhite;
     color: antiquewhite;
@@ -298,8 +298,7 @@ p {
 }
 
 .useful {
-    background: linear-gradient(to right, #8338EC, #3A86FF);
-    color: antiquewhite;
+    background: linear-gradient(to right, #00A5CF, #9FFFCB);
     text-align: center;
     padding: 2rem 2rem 5rem 2rem;
     max-width: 1600px;
@@ -315,7 +314,7 @@ p {
 }
 
 .useful #bookLessNow {
-    background-color: #FFBE0B;
+    background-color: #25A18E;
     color: black;
     border: 3px solid;
     font-size: 1.5rem;
@@ -328,7 +327,7 @@ p {
 
 .useful #bookLessNow:hover {
     transform: scale(1.03);
-    background: linear-gradient(to right, #FFBE0B, #FB5607);
+    background: #7AE582;
     font-style: italic;
 }
 
@@ -336,14 +335,14 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, #FB5607, #FFBE0B);
-    color: #2e2e2e;
+    background: linear-gradient(to right, #004E64, #00A5CF);
     margin-top: 5rem;
 }
 
 .main-footer .copyright {
     text-align: center;
     padding: 0 2rem;
+    color: antiquewhite;
 }
 
 .main-footer .footer-logo {
@@ -370,7 +369,6 @@ p {
     width: 20%;
 }
 
-
 .footer-socials img {
     width: 1.6rem;
     transition: .3s ease;
@@ -392,6 +390,7 @@ p {
 .main-footer .links a {
     margin: .2rem .8rem;
     font-size: 1rem;
+    color: antiquewhite;
 }
 
 
@@ -413,13 +412,14 @@ p {
     bottom: 1rem;
     border: 2px solid;
     border-radius: 50px;
-    background: linear-gradient(to right, #FB5607, #FFBE0B);
+    background: #25A18E;
 }
 
 .services-section .service-card button:hover {
     transform: scale(1.03);
     cursor: pointer;
     font-style: italic;
+    background-color: #7AE582;
 }
 
 /* FOR SERVICES AND RESOURCES PAGES - CARDS */
@@ -447,12 +447,13 @@ p {
     bottom: 12rem;
     padding: 5px 0;
     width: 100%;
-    background-color: #FFBE0B;
+    background-color: #9FFFCB;
 }
 
 .resources-section .resource-card, .services-section .service-card {
     height: 450px;
     width: 300px;
+    color: #2e2e2e;
     border-radius: 3px;
     box-shadow: 5px 5px 10px #2e2e2e;
     overflow: hidden;
@@ -487,7 +488,7 @@ p {
 .contact-bod .contact-form {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to right, #8338EC, #3A86FF);
+    background: linear-gradient(to right, #00A5CF, #9FFFCB);
     border-radius: 20px;
     padding: 2rem 5rem;
 }
@@ -495,7 +496,7 @@ p {
 .contact-bod .contact-form input, .contact-bod .contact-form textarea, .contact-bod .contact-form select {
     padding: .5rem 1rem;
     margin: .5rem 0;
-    border: 2px solid black;
+    border: 2px solid #2e2e2e;
 }
 
 .contact-bod .contact-form input, .contact-bod .contact-form select {
@@ -511,11 +512,11 @@ p {
 }
 
 .contact-bod .contact-form button {
-    background: linear-gradient(to right, #FB5607, #FFBE0B);
+    background: #25A18E;
     width: fit-content;
     padding: .5rem 2rem;
     font-size: 1.2rem;
-    border: 2px solid black;
+    border: 2px solid #2e2e2e;
     border-radius: 50px;
     margin: .5rem auto;
 }
@@ -524,15 +525,16 @@ p {
     transform: scale(1.03);
     cursor: pointer;
     font-style: italic;
+    background-color: #7AE582;
 }
 
 /* PAGES */
 .contact-link {
-    color: #3A86FF;
+    color: #25A18E;
 }
 
 .contact-link:hover {
-    color: #FB5607;
+    color: #7AE582;
 }
 
 .about-bod .hero-bg, .services-bod .hero-bg, .resources-bod .hero-bg, .blog-bod .hero-bg {
@@ -603,14 +605,14 @@ p {
     font-size: 4.3rem;
     font-weight: bold;
     color: antiquewhite;
-    background: linear-gradient(to right, #3A86FF, #8338EC);
+    background: #25A18E;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 2px solid #8338EC;
-    border-bottom: 2px solid #8338EC;
-    box-shadow: 4px -4px 3px antiquewhite,
-                5px -5px 0 black;
+    border-left: 2px solid #004E64;
+    border-bottom: 2px solid #004E64;
+    box-shadow: 4px -4px 3px #9FFFCB,
+                5px -5px 0 #2e2e2e;
 }
 
 .alpha-cards .small-font {
@@ -623,7 +625,8 @@ p {
 
 .alpha-card:hover {
     transform: translate(4px, -4px);
-    background: #8338EC;
+    background: #9FFFCB;
+    color: #2e2e2e;
     box-shadow: none;
     cursor: pointer;
 }
@@ -734,19 +737,22 @@ p {
         height: 100vh;
         padding: 1.5rem 0;
         position: absolute;
-        background: linear-gradient(to right, #FB5607, #FFBE0B);
+        background: linear-gradient(to right, #004E64, #00A5CF);
         transition: .5s ease;
     }
     .main-nav-list li {
         padding: 1.5rem;
     }
+    .main-nav-list li:hover {
+        background: linear-gradient(to left, #004E64, #00A5CF);
+    }
     .mn-res-list {
-        transform: translate(-13rem, 9rem);
+        transform: translate(-13rem, 20rem);
         transition: .5s ease;
     }
-    .mn-res-list:hover li {
+    /* .mn-res-list:hover li {
         background-color: #FFBE0B;
-    }
+    } */
     .main-nav-list.active {
         transform: translate(-10rem, 0);
     }
