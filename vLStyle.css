@@ -405,63 +405,72 @@ p {
     background: url(vLPics/hero-services-pexels-pixabay-267669.jpg);
 }
 
-.services-section {
+.services-section .service-card button {
+    font-size: 1.5rem;
+    padding: .3rem 2rem;
+    margin: 1rem 0;
+    position: relative;
+    bottom: 1rem;
+    border: 2px solid;
+    border-radius: 50px;
+    background: linear-gradient(to right, #FB5607, #FFBE0B);
+}
+
+.services-section .service-card button:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    font-style: italic;
+}
+
+/* FOR SERVICES AND RESOURCES PAGES - CARDS */
+.services-section, .resources-section {
     text-align: center;
     display: flex;
+    justify-content: space-around;
     max-width: 1600px;
     margin: 4rem auto;
     padding: 0 3rem;
 }
 
-.service-card {
-    margin: 0 1rem;
-    background-color: rgb(255, 190, 11, .5);
-    border-radius: 10px;
+.resources-section .res-card-image, .services-section .ser-card-image {
+    height: 100%;
+    transition: ease .2s;
 }
 
-.service-card .service-header {
-    background: linear-gradient(to right, #8338EC, #3A86FF);
-    color: antiquewhite;
-    margin: 0;
-    padding: .5rem;
-    border-radius: 10px 10px 0 0;
+.resources-section .res-card-image:hover, .services-section .ser-card-image:hover {
+    transform: scale(1.1) rotate(-2deg);
 }
 
-.service-card .service-header h4 {
-    margin: .7rem 0 ;
-}
-
-.service-card .service-body {
-    padding: 0 .5rem;
-}
-
-.service-card .service-body .info {
-    font-size: 1rem;
-}
-
-.service-card .service-footer button {
+.resources-section .res-card-intro, .services-section .ser-card-intro {
+    position: relative;
+    right: 0;
+    bottom: 12rem;
+    padding: 5px 0;
+    width: 100%;
     background-color: #FFBE0B;
-    color: black;
-    font-size: 1.1rem;
-    border: 2px solid;
-    padding: .5rem 1rem;
-    border-radius: 80px;
-    width: fit-content;
-    margin: 0 auto 1.5rem;
-    transition: .3s ease;
 }
 
-.service-card .service-footer button:hover {
-    transform: scale(1.03);
-    font-style: italic;
-    background: linear-gradient(to right, #FFBE0B, #FB5607);
-    cursor: pointer;
+.resources-section .resource-card, .services-section .service-card {
+    height: 450px;
+    width: 300px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px #2e2e2e;
+    overflow: hidden;
 }
 
 /* RESOUCRES PAGE */
 .resources-bod .hero-bg {
     background: url(vLPics/hero-resources-pexels-magda-ehlers-1337387.jpg);
 }
+
+ {
+    transform: rotate(90deg);
+    height: 100%;
+    position: relative;
+    right: 15rem;
+    transition: ease .2s;
+}
+
 
 /* BLOG PAGE */
 .blog-bod .hero-bg {
