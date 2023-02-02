@@ -463,15 +463,6 @@ p {
     background: url(vLPics/hero-resources-pexels-magda-ehlers-1337387.jpg);
 }
 
- {
-    transform: rotate(90deg);
-    height: 100%;
-    position: relative;
-    right: 15rem;
-    transition: ease .2s;
-}
-
-
 /* BLOG PAGE */
 .blog-bod .hero-bg {
     background: url(vLPics/hero-blog-pexels-jess-bailey-designs-768474.jpg);
@@ -486,7 +477,7 @@ p {
     background-position: 70% 70%;
 }
 
-.contact-bod .contact-intro, .contact-bod .contact-form-section {
+.contact-bod .contact-form-section {
     margin: auto;
     text-align: center;
     width: 90%;
@@ -562,7 +553,7 @@ p {
 }
 
 .about-bod .intro-section, .services-bod .intro-section, .resources-bod .intro-section, 
-.blog-bod .intro-section {
+.blog-bod .intro-section, .contact-bod .intro-section, .privacy-bod .intro-section {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -765,7 +756,7 @@ p {
     /* SERVICES */
     .services-section {
         flex-direction: column;
-        margin: 0;
+        align-items: center;
     }
     .services-section .service-card {
         margin-bottom: 2rem;
