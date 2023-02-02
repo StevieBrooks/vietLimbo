@@ -213,6 +213,7 @@ p {
 .hero-content .lesson:hover {
     transform: scale(1.03);
     background: linear-gradient(to right, #FFBE0B, #FB5607);
+    font-style: italic;
 }
 
 .hero-content .socials {
@@ -328,6 +329,7 @@ p {
 .useful #bookLessNow:hover {
     transform: scale(1.03);
     background: linear-gradient(to right, #FFBE0B, #FB5607);
+    font-style: italic;
 }
 
 .main-footer {
@@ -440,8 +442,8 @@ p {
 .service-card .service-footer button {
     background-color: #FFBE0B;
     color: black;
+    font-size: 1.1rem;
     border: 2px solid;
-    font-weight: bold;
     padding: .5rem 1rem;
     border-radius: 80px;
     width: fit-content;
@@ -451,6 +453,7 @@ p {
 
 .service-card .service-footer button:hover {
     transform: scale(1.03);
+    font-style: italic;
     background: linear-gradient(to right, #FFBE0B, #FB5607);
     cursor: pointer;
 }
@@ -520,6 +523,7 @@ p {
 .contact-bod .contact-form button:hover {
     transform: scale(1.03);
     cursor: pointer;
+    font-style: italic;
 }
 
 /* PAGES */
