@@ -32,7 +32,7 @@ p {
 .main-header {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to right, #004E64, #00A5CF);
+    background-color: #137547;
     position: fixed;
     top: 0;
     width: 100%;
@@ -43,7 +43,7 @@ p {
     margin: .5rem 0 .7rem 1rem;
     padding: 0;
     min-width: 170px;
-    color: antiquewhite;
+    color: #f0f0f0;
     font-family: Caveat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2.5rem;
     transition: .3s ease;
@@ -78,18 +78,18 @@ p {
 }
 
 .main-nav-list a {
-    color: antiquewhite;
+    color: #f0f0f0;
     display: block;
     width: 100%;
     height: 100%;
 }
 
 .main-nav-list li:hover {
-    background: linear-gradient(to right, #004E64, #00A5CF);
+    background-color: #054A29;
 }
 
 .main-nav-list li:hover a {
-    color: antiquewhite;
+    color: #f0f0f0;
 }
 
 .main-nav-list li:hover .mn-res-list {
@@ -108,7 +108,7 @@ p {
 }
 
 .mn-res-list li {
-    background: linear-gradient(to right, #004E64, #00A5CF);
+    background-color: #137547;
     text-align: center;
     margin: 3px 0;
     padding: .5rem 1rem;
@@ -118,9 +118,9 @@ p {
 }
 
 .mn-res-list li:hover {
-    background: linear-gradient(to right, #00A5CF, #004E64);
+    background-color: #054A29;
     cursor: pointer;
-    border: 1px solid #2e2e2e;
+    border: 1px solid #f0f0f0;
 }
 
 .main-nav-burger {
@@ -148,7 +148,7 @@ p {
 .bar {
     width: 30px;
     height: 5px;
-    background-color: antiquewhite;
+    background-color: #f0f0f0;
     margin: 5px;
     border-radius: 10px;
 }
@@ -173,7 +173,9 @@ p {
 
 .hero-content {
     text-align: center;
-    background: linear-gradient(to right, #00A5CF, #9FFFCB);
+    background-color: #3FA34D;
+    border: 1px solid #0a0a0a;
+    box-shadow: 2px 2px 5px #0a0a0a;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -191,28 +193,28 @@ p {
 
 .hero-content .hero-title {
     margin-bottom: 1rem;
-    color: #2e2e2e;
+    color: #0a0a0a;
 }
 
 .hero-content .hero-para {
     font-size: 1rem;
-    color: #2e2e2e;
+    color: #0a0a0a;
     margin-bottom: 1.5rem;
 }
 
 .hero-content .lesson {
-    background-color: #25A18E;
-    color: black;
-    border: 3px solid;
+    background-color: #137547;
+    color: #f0f0f0;
+    border: 2px solid;
     font-size: 1.5rem;
     padding: 1rem 2rem;
     border-radius: 80px;
-    transition: .3s ease;
+    transition: .2s ease;
 }
 
 .hero-content .lesson:hover {
     transform: scale(1.03);
-    background: #7AE582;
+    background: #054A29;
     font-style: italic;
 }
 
@@ -238,8 +240,8 @@ p {
     margin: auto;
     max-width: 1600px;
     text-align: center;
-    background: linear-gradient(to right, #00A5CF, #9FFFCB);
-    color: #2e2e2e;
+    background-color: #5BBA6F;
+    color: #0a0a0a;
 }
 
 .whats-new .welcome-title {
@@ -268,27 +270,29 @@ p {
 }
 
 .review {
-    background: linear-gradient(to right, #00A5CF, #9FFFCB);
-    color: #2e2e2e;
-    border: 3px solid #25A18E;
+    background-color: #5BBA6F;
+    color: #0a0a0a;
+    border: 1px solid #0a0a0a;
     border-radius: 20px;
     width: fit-content;
     padding: .1rem 0;
     margin: 2rem 0;
+    box-shadow: 2px 2px 5px #0a0a0a;
 }
 
 .review .rev-name {
     position: relative;
     bottom: 1rem;
     left: 3rem;
-    background: #25A18E;
+    background: #3FA34D;
     border-radius: 20px;
-    border: 3px solid antiquewhite;
-    color: antiquewhite;
+    border: 1px solid #0a0a0a;
+    color: #0a0a0a;
     width: fit-content;
     padding: .5rem 2rem;
     margin: 0;
     font-size: 1.5rem;
+    box-shadow: 2px 2px 5px #0a0a0a;
 }
 
 .review .rev-rating {
@@ -298,7 +302,7 @@ p {
 }
 
 .useful {
-    background: linear-gradient(to right, #00A5CF, #9FFFCB);
+    background-color: #5BBA6F;
     text-align: center;
     padding: 2rem 2rem 5rem 2rem;
     max-width: 1600px;
@@ -314,9 +318,9 @@ p {
 }
 
 .useful #bookLessNow {
-    background-color: #25A18E;
-    color: black;
-    border: 3px solid;
+    background-color: #137547;
+    color: #f0f0f0;
+    border: 2px solid;
     font-size: 1.5rem;
     padding: 1rem;
     border-radius: 80px;
@@ -327,7 +331,7 @@ p {
 
 .useful #bookLessNow:hover {
     transform: scale(1.03);
-    background: #7AE582;
+    background: #054A29;
     font-style: italic;
 }
 
@@ -335,14 +339,14 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, #004E64, #00A5CF);
+    background-color: #137547;
     margin-top: 5rem;
 }
 
 .main-footer .copyright {
     text-align: center;
     padding: 0 2rem;
-    color: antiquewhite;
+    color: #f0f0f0;
 }
 
 .main-footer .footer-logo {
@@ -350,7 +354,7 @@ p {
     font-family: Caveat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2rem;
     transition: .3s ease;
-    color: antiquewhite;
+    color: #f0f0f0;
 }
 
 .main-footer #footerLogo:hover {
@@ -390,7 +394,7 @@ p {
 .main-footer .links a {
     margin: .2rem .8rem;
     font-size: 1rem;
-    color: antiquewhite;
+    color: #f0f0f0;
 }
 
 
@@ -410,16 +414,18 @@ p {
     margin: 1rem 0;
     position: relative;
     bottom: 1rem;
-    border: 2px solid;
+    border: 1px solid #0a0a0a;
     border-radius: 50px;
-    background: #25A18E;
+    background: #3FA34D;
 }
 
 .services-section .service-card button:hover {
     transform: scale(1.03);
     cursor: pointer;
     font-style: italic;
-    background-color: #7AE582;
+    background-color: #054A29;
+    color: #f0f0f0;
+    border-color: #f0f0f0;
 }
 
 /* FOR SERVICES AND RESOURCES PAGES - CARDS */
@@ -438,7 +444,7 @@ p {
 }
 
 .resources-section .res-card-image:hover, .services-section .ser-card-image:hover {
-    transform: scale(1.1) rotate(-2deg);
+    transform: scale(1.05) rotate(-1deg);
 }
 
 .resources-section .res-card-intro, .services-section .ser-card-intro {
@@ -447,15 +453,16 @@ p {
     bottom: 12rem;
     padding: 5px 0;
     width: 100%;
-    background-color: #9FFFCB;
+    background-color: #5BBA6F;
 }
 
 .resources-section .resource-card, .services-section .service-card {
     height: 450px;
     width: 300px;
-    color: #2e2e2e;
+    color: #0a0a0a;
+    border: 1px solid #0a0a0a;
     border-radius: 3px;
-    box-shadow: 5px 5px 10px #2e2e2e;
+    box-shadow: 5px 5px 10px #0a0a0a;
     overflow: hidden;
 }
 
@@ -488,7 +495,9 @@ p {
 .contact-bod .contact-form {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to right, #00A5CF, #9FFFCB);
+    background-color: #3FA34D;
+    border: 1px solid #0a0a0a;
+    box-shadow: 5px 5px 10px #0a0a0a;
     border-radius: 20px;
     padding: 2rem 5rem;
 }
@@ -496,7 +505,7 @@ p {
 .contact-bod .contact-form input, .contact-bod .contact-form textarea, .contact-bod .contact-form select {
     padding: .5rem 1rem;
     margin: .5rem 0;
-    border: 2px solid #2e2e2e;
+    border: 1px solid #0a0a0a;
 }
 
 .contact-bod .contact-form input, .contact-bod .contact-form select {
@@ -512,11 +521,11 @@ p {
 }
 
 .contact-bod .contact-form button {
-    background: #25A18E;
+    background: #5BBA6F;
     width: fit-content;
     padding: .5rem 2rem;
     font-size: 1.2rem;
-    border: 2px solid #2e2e2e;
+    border: 1px solid #0a0a0a;
     border-radius: 50px;
     margin: .5rem auto;
 }
@@ -525,16 +534,18 @@ p {
     transform: scale(1.03);
     cursor: pointer;
     font-style: italic;
-    background-color: #7AE582;
+    background-color: #054A29;
+    color: #f0f0f0;
+    border-color: #f0f0f0;
 }
 
 /* PAGES */
 .contact-link {
-    color: #25A18E;
+    color: #5BBA6F;
 }
 
 .contact-link:hover {
-    color: #7AE582;
+    color: #137547;
 }
 
 .about-bod .hero-bg, .services-bod .hero-bg, .resources-bod .hero-bg, .blog-bod .hero-bg {
@@ -552,6 +563,8 @@ p {
     position: relative;
     bottom: 30rem;
     z-index: 1;
+    border: 1px solid #0a0a0a;
+    box-shadow: 2px 2px 5px #0a0a0a;
 }
 
 .about-bod .intro-section, .services-bod .intro-section, .resources-bod .intro-section, 
@@ -604,15 +617,15 @@ p {
     margin: 1.5rem;
     font-size: 4.3rem;
     font-weight: bold;
-    color: antiquewhite;
-    background: #25A18E;
+    color: #f0f0f0;
+    background: #137547;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 2px solid #004E64;
-    border-bottom: 2px solid #004E64;
-    box-shadow: 4px -4px 3px #9FFFCB,
-                5px -5px 0 #2e2e2e;
+    border-left: 1px solid #0a0a0a;
+    border-bottom: 1px solid #0a0a0a;
+    box-shadow: 4px -4px 3px #f0f0f0,
+                5px -5px 0 #0a0a0a;
 }
 
 .alpha-cards .small-font {
@@ -625,8 +638,7 @@ p {
 
 .alpha-card:hover {
     transform: translate(4px, -4px);
-    background: #9FFFCB;
-    color: #2e2e2e;
+    background: #054A29;
     box-shadow: none;
     cursor: pointer;
 }
