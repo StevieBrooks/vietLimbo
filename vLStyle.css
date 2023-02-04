@@ -403,6 +403,29 @@ p {
     background: url(vLPics/hero-about-pexels-markus-winkler-5156618.jpg);
 }
 
+.about-bod .about-content {
+    background-color: #5BBA6F;
+    padding: 2rem 4rem;
+}
+
+.about-bod h2 {
+    text-align: center;
+}
+
+.about-bod .left-pic {
+    width: 25rem;
+    margin: 1rem 2rem 1rem 0;
+    float: left;
+    border-radius: 20px;
+}
+
+.about-bod .right-pic {
+    width: 25rem;
+    margin: 1rem 0 1rem 2rem;
+    float: right;
+    border-radius: 20px;
+}
+
 /* SERVICES PAGE */
 .services-bod .hero-bg {
     background: url(vLPics/hero-services-pexels-pixabay-267669.jpg);
@@ -770,6 +793,11 @@ p {
     }
     .whats-new img {
         width: 50%;
+    }
+    /* ABOUT */
+    .about-bod img {
+        width: 90%;
+        margin: 2rem 0;
     }
     /* SERVICES */
     .services-section {
