@@ -93,7 +93,7 @@ p {
 }
 
 .main-nav-list li:hover .mn-res-list {
-    display: flex;
+    display: none;
 }
 
 .mn-res-list {
@@ -219,7 +219,7 @@ p {
 }
 
 .hero-content .socials {
-    display: flex;
+    display: none;
     justify-content: space-evenly;
     margin: 1.5rem auto 0;
     width: 70%;
@@ -368,7 +368,7 @@ p {
 }
 
 .footer-socials {
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 20%;
 }
@@ -749,14 +749,14 @@ p {
         height: 100vh;
         padding: 1.5rem 0;
         position: absolute;
-        background: linear-gradient(to right, #004E64, #00A5CF);
+        background-color: #137547;
         transition: .5s ease;
     }
     .main-nav-list li {
         padding: 1.5rem;
     }
     .main-nav-list li:hover {
-        background: linear-gradient(to left, #004E64, #00A5CF);
+        background-color: #054A29;
     }
     .mn-res-list {
         transform: translate(-13rem, 20rem);
