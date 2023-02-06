@@ -44,9 +44,14 @@ player.forEach((p) => {
         alphaSnaLadPlayer.src = p.children[0].src;
         alphaSnaLadPlayer.style.width = `${playerIconWidth}px`;
         alphaSnaLadPlayer.style.position = 'absolute';
+        alphaSnaLadPlayer.style.left = `${rect.left}px`;
         alphaSnaLadPlayer.style.top = `${rect.top}px`;
         // positioning this way dont work because users scroll on screen
     })
 })
 
-console.log(box[2]);
+let plPosition = alphaSnaLadPlayer.getBoundingClientRect();
+setTimeout(() => {
+    console.log(plPosition.left);
+    console.log(plPosition.top);
+}, 5000)

@@ -253,6 +253,8 @@ p {
     float: left;
     margin: 1rem 2rem 1rem 0;
     border-radius: 20px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 2px 2px 5px #0a0a0a;
 }
 
 .reviews {
@@ -419,6 +421,8 @@ p {
     margin: 1rem 2rem 1rem 0;
     float: left;
     border-radius: 20px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 2px 2px 5px #0a0a0a;
 }
 
 .about-bod .right-pic {
@@ -426,6 +430,8 @@ p {
     margin: 1rem 0 1rem 2rem;
     float: right;
     border-radius: 20px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 2px 2px 5px #0a0a0a;
 }
 
 /* SERVICES PAGE */
@@ -868,7 +874,7 @@ p {
     .main-footer .links {
         margin-bottom: .5rem;
     }
-    .about-bod .hero-content {
+    .about-bod .hero-content, .resources-bod .hero-content {
         width: 60%;
         margin: auto;
     }
