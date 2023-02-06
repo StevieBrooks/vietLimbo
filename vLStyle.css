@@ -406,6 +406,8 @@ p {
 .about-bod .about-content {
     background-color: #5BBA6F;
     padding: 2rem 4rem;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .about-bod h2 {
@@ -743,7 +745,7 @@ p {
 }
 
 @media(min-width: 1700px) {
-    .whats-new, .useful {
+    .whats-new, .useful, .about-bod .about-content {
         border-radius: 20px;
     }
 }
