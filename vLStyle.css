@@ -435,20 +435,21 @@ p {
 
 .services-section .service-card button {
     font-size: 1.5rem;
-    padding: .3rem 2rem;
+    padding: .5rem 2rem;
     margin: 1rem 0;
     position: relative;
     bottom: 1rem;
-    border: 1px solid #0a0a0a;
+    border: 1px solid #f0f0f0;
     border-radius: 50px;
-    background: #3FA34D;
+    background: #054A29;
+    color: #f0f0f0;
 }
 
 .services-section .service-card button:hover {
     transform: scale(1.03);
     cursor: pointer;
     font-style: italic;
-    background-color: #054A29;
+    background: linear-gradient(to right, #137547, #2A9134);
     color: #f0f0f0;
     border-color: #f0f0f0;
 }
@@ -478,7 +479,8 @@ p {
     bottom: 12rem;
     padding: 5px 0;
     width: 100%;
-    background-color: #5BBA6F;
+    background-color: #2A9134;
+    color: #f0f0f0;
 }
 
 .resources-section .resource-card, .services-section .service-card {
@@ -546,11 +548,12 @@ p {
 }
 
 .contact-bod .contact-form button {
-    background: #5BBA6F;
+    background: #054A29;
+    color: #f0f0f0;
     width: fit-content;
     padding: .5rem 2rem;
-    font-size: 1.2rem;
-    border: 1px solid #0a0a0a;
+    font-size: 1.5rem;
+    border: 1px solid #f0f0f0;
     border-radius: 50px;
     margin: .5rem auto;
 }
@@ -559,7 +562,7 @@ p {
     transform: scale(1.03);
     cursor: pointer;
     font-style: italic;
-    background-color: #054A29;
+    background: linear-gradient(to right, #137547, #2A9134);
     color: #f0f0f0;
     border-color: #f0f0f0;
 }
@@ -583,6 +586,7 @@ p {
 .about-bod .hero-content, .services-bod .hero-content, .resources-bod .hero-content,
 .blog-bod .hero-content, .contact-bod .hero-content {
     font-size: 1.5rem;
+    letter-spacing: .3rem;
     width: fit-content;
     padding: 0 3rem;
     position: relative;
@@ -590,7 +594,7 @@ p {
     z-index: 1;
     border: 1px solid #f0f0f0;
     box-shadow: 2px 2px 5px #0a0a0a;
-    color: #0a0a0a;
+    color: #f0f0f0;
 }
 
 .about-bod .intro-section, .services-bod .intro-section, .resources-bod .intro-section, 
@@ -798,9 +802,9 @@ p {
         width: 50%;
     }
     /* ABOUT */
-    .about-bod img {
-        width: 90%;
-        margin: 2rem 0;
+    .about-bod .right-pic, .about-bod .left-pic {
+        width: 100%;
+        margin: 2rem auto;
     }
     /* SERVICES */
     .services-section {
@@ -810,8 +814,6 @@ p {
     .services-section .service-card {
         margin-bottom: 2rem;
     }
-
-
     .alpha-cards {
         padding: 0;
     }
@@ -865,5 +867,19 @@ p {
     }
     .main-footer .links {
         margin-bottom: .5rem;
+    }
+    .about-bod .hero-content {
+        width: 60%;
+        margin: auto;
+    }
+    .about-bod .about-content {
+        padding: 2rem;
+    }
+    .about-bod .about-content .left-pic, .about-bod .about-content .right-pic {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .contact-bod .contact-form {
+        padding: 2rem 1rem;
     }
 }
