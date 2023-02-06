@@ -173,8 +173,8 @@ p {
 
 .hero-content {
     text-align: center;
-    background-color: #3FA34D;
-    border: 1px solid #0a0a0a;
+    background-color: #2A9134;
+    border: 1px solid #f0f0f0;
     box-shadow: 2px 2px 5px #0a0a0a;
     border-radius: 20px;
     display: flex;
@@ -193,28 +193,28 @@ p {
 
 .hero-content .hero-title {
     margin-bottom: 1rem;
-    color: #0a0a0a;
+    color: #f0f0f0;
 }
 
 .hero-content .hero-para {
     font-size: 1rem;
-    color: #0a0a0a;
+    color: #f0f0f0;
     margin-bottom: 1.5rem;
 }
 
 .hero-content .lesson {
-    background-color: #137547;
+    background-color: #054A29;
     color: #f0f0f0;
-    border: 2px solid;
+    border: 1px solid;
     font-size: 1.5rem;
-    padding: 1rem 2rem;
+    padding: .5rem 2rem;
     border-radius: 80px;
     transition: .2s ease;
 }
 
 .hero-content .lesson:hover {
     transform: scale(1.03);
-    background: #054A29;
+    background: linear-gradient(to right, #137547, #2A9134);
     font-style: italic;
 }
 
@@ -270,9 +270,9 @@ p {
 }
 
 .review {
-    background-color: #5BBA6F;
-    color: #0a0a0a;
-    border: 1px solid #0a0a0a;
+    background-color: #2A9134;
+    color: #f0f0f0;
+    border: 1px solid #f0f0f0;
     border-radius: 20px;
     width: fit-content;
     padding: .1rem 0;
@@ -284,10 +284,10 @@ p {
     position: relative;
     bottom: 1rem;
     left: 3rem;
-    background: #3FA34D;
+    background: #137547;
     border-radius: 20px;
-    border: 1px solid #0a0a0a;
-    color: #0a0a0a;
+    border: 1px solid #f0f0f0;
+    color: #f0f0f0;
     width: fit-content;
     padding: .5rem 2rem;
     margin: 0;
@@ -318,11 +318,11 @@ p {
 }
 
 .useful #bookLessNow {
-    background-color: #137547;
+    background-color: #054A29;
     color: #f0f0f0;
-    border: 2px solid;
+    border: 1px solid;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: .5rem 2rem;
     border-radius: 80px;
     width: fit-content;
     margin: 0 auto;
@@ -331,7 +331,7 @@ p {
 
 .useful #bookLessNow:hover {
     transform: scale(1.03);
-    background: #054A29;
+    background: linear-gradient(to right, #137547, #2A9134);
     font-style: italic;
 }
 
@@ -588,8 +588,9 @@ p {
     position: relative;
     bottom: 30rem;
     z-index: 1;
-    border: 1px solid #0a0a0a;
+    border: 1px solid #f0f0f0;
     box-shadow: 2px 2px 5px #0a0a0a;
+    color: #0a0a0a;
 }
 
 .about-bod .intro-section, .services-bod .intro-section, .resources-bod .intro-section, 
