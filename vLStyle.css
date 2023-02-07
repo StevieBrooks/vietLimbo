@@ -888,4 +888,7 @@ p {
     .contact-bod .contact-form {
         padding: 2rem 1rem;
     }
+    .thanks-bod .thank-you img {
+        margin: 2rem 0;
+    }
 }
