@@ -759,6 +759,10 @@ p {
     .whats-new, .useful, .about-bod .about-content {
         border-radius: 20px;
     }
+    .about-bod .about-content .right-pic {
+        position: relative;
+        bottom: 2rem;
+    }
 }
 
 @media(max-width: 750px) {
