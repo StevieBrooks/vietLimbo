@@ -5,6 +5,7 @@ const weather3Day = document.querySelector('.weather-3day');
 const submit = document.querySelector('.submit');
 const displayWeather = document.querySelector('.display-weather');
 
+// sort city list alphabetically!
 
 submit.addEventListener('click', () => {
     if(city.value.length > 0 && weatherToday.checked) {
@@ -19,6 +20,14 @@ submit.addEventListener('click', () => {
             if (this.status == 200) {
                 const weatherResponse = JSON.parse(this.responseText);
                 console.log(weatherResponse);
+                displayWeather.innerHTML = `
+                    <img src="${weatherResponse.current.condition.icon}">
+                    <h3>${weatherResponse.location.name} Weather: ${weatherResponse.current.condition.text}</h3>
+                    <ul>
+                        <li>Temperature: ${weatherResponse.current.temp_c}</li>
+                        <li>Feels Like: ${weatherResponse.current.feelslike_c}</li>
+                    </ul>
+                `
             }
         };
     
