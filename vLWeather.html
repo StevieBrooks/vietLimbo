@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property=’og:title’ content='Viet Limbo'/>
+    <meta property=’og:image’ content='http://vietlimbo.com/hung-nguyen-viet-unsplash.jpg’/>
+    <meta property=’og:description’ content="A Vietnamese language learning website.">
+    <meta property=’og:url’ content="http://vietlimbo.com/">
+    <meta property='og:image:width' content='1920' />
+    <meta property='og:image:height' content='1440' />
+    <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
+    <meta property="og:type" content='website'/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vLStyle.css">
+    <title>Viet Limbo</title>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <header class="main-header">
+        <a href="index.html">
+            <h2 class="logo"><img src="vLPics/—Pngtree—beautiful vietnam flag realistic with_7667437.png" alt="vietnam flag">Viet Limbo</h2>
+        </a>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a href="about.html"><strong>About</strong></a></li>
+                <li><a href="services.html"><strong>Services</strong></a></li>
+                <li><a href="resources.html"><strong>Resources</strong></a>
+                    <ul class="mn-res-list">
+                        <li><a href="vLAlphaCards.html">Alphabet Cards</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a href="blog.html"><strong>Blog</strong></a></li> -->
+                <li><a href="contact.html"><strong>Contact</strong></a></li>
+            </ul>
+            <div class="main-nav-burger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Check the Weather in Vietnam</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum officiis voluptates magnam cumque facilis beatae doloremque, ratione quia voluptatibus nostrum.</p>
+
+    <section class="getWeather">
+
+            <select name="city" class="city">
+                <option value="">--Select City--</option>
+                <option value="kon tum">Kon Tum</option>
+                <option value="vung tau">Vung Tau</option>
+                <option value="hai phong">Hai Phong</option>
+                <option value="Ha Giang">Ha Giang</option>
+                <option value="cao bang">Cao Bang</option>
+                <option value="can tho">Can Tho</option>
+                <option value="tay ninh">Tay Ninh</option>
+                <option value="dong hoi">Dong Hoi</option>
+                <option value="my tho">My Tho</option>
+                <option value="ninh binh">Ninh Binh</option>
+                <option value="nha trang">Nha Trang</option>
+                <option value="hue">Hue</option>
+                <option value="da lat">Dalat</option>
+                <option value="danang">Da Nang</option>
+                <option value="hoi an">Hoi An</option>
+                <option value="ho chi minh city">Saigon</option>
+                <option value="hanoi">Hanoi</option>
+            </select>
+
+            <label for="weatherToday"><input type="radio" name="weatherWhen" class="weather-today" id="weatherToday">Today</label>
+            <label for="weather3Day"><input type="radio" name="weatherWhen" class="weather-3day" id="weather3Day">3-day Forecast</label>
+            
+            <button type="submit" name="submit" id="submit" class="submit">Get Weather!</button>
+
+    </section>
+
+    <section class="display-weather">
+        
+    </section>
+
+    <footer class="main-footer">
+        <div class="copyright">
+            <a href="index.html"><h5 class="footer-logo" id="footerLogo">Viet Limbo</h5></a>
+            <p>Copyright &copy; 2023</p>
+        </div>
+        <div class="socials footer-socials">
+            <a href="#"><img src="vLPics/facebook.png" alt=""></a>
+            <a href="#"><img src="vLPics/discord (1).png" alt=""></a>
+            <a href=""><img src="vLPics/tik-tok.png" alt=""></a>
+        </div>
+        <div class="links">
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <script src="vLScript.js"></script>
+    <script>
+
+        const city = document.querySelector('.city')
+        const weatherToday = document.querySelector('.weather-today');
+        const weather3Day = document.querySelector('.weather-3day');
+        const submit = document.querySelector('.submit');
+        const displayWeather = document.querySelector('.display-weather');
+
+        submit.addEventListener('click', () => {
+            console.log(city.value);
+
+            const findWeather = new XMLHttpRequest();
+
+            findWeather.open("GET", "https://weatherapi-com.p.rapidapi.com/current.json?q=phu%20quoc");
+
+            findWeather.onload = function() {
+                if (this.status == 200) {
+                    const weatherResponse = JSON.parse(this.responseText);
+                    console.log(weatherResponse);
+                }
+            };
+
+            findWeather.setRequestHeader("X-RapidAPI-Key", "cd323733eemsh2260acaef042b68p173ddajsn26dd1647e98f");
+            findWeather.setRequestHeader("X-RapidAPI-Host", "weatherapi-com.p.rapidapi.com");
+
+            findWeather.send();
+        });
+
+    </script>
+
+</body>
+</html>
