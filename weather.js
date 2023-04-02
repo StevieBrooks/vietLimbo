@@ -20,12 +20,14 @@ submit.addEventListener('click', () => {
             if (this.status == 200) {
                 const weatherResponse = JSON.parse(this.responseText);
                 console.log(weatherResponse);
+                // make function to toggle between degrees c/f
                 displayWeather.innerHTML = `
                     <img src="${weatherResponse.current.condition.icon}">
                     <h3>${weatherResponse.location.name} Weather: ${weatherResponse.current.condition.text}</h3>
                     <ul>
                         <li>Temperature: ${weatherResponse.current.temp_c}</li>
                         <li>Feels Like: ${weatherResponse.current.feelslike_c}</li>
+                        <li>Humidity: ${weatherResponse.current.humidity}</li>
                     </ul>
                 `
             }
