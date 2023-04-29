@@ -24,10 +24,22 @@ submit.addEventListener('click', () => {
                 displayWeather.innerHTML = `
                     <img src="${weatherResponse.current.condition.icon}">
                     <h3>${weatherResponse.location.name} Weather: ${weatherResponse.current.condition.text}</h3>
+                    <h5>Basic Info:</h5>
+                    <ul>
+                        <li>Local Time: ${weatherResponse.location.localtime}</li>
+                        <li>Timezone: ${weatherResponse.location.tz_id}</li>
+                        <li>Latitude: ${weatherResponse.location.lat}</li>
+                        <li>Longitude: ${weatherResponse.location.lon}</li>
+                    </ul>
+                    <h5>Weather Data:</h5>
                     <ul>
                         <li>Temperature: ${weatherResponse.current.temp_c}</li>
                         <li>Feels Like: ${weatherResponse.current.feelslike_c}</li>
                         <li>Humidity: ${weatherResponse.current.humidity}</li>
+                        <li>Precipitation (mm): ${weatherResponse.current.precip_mm}</li>
+                        <li>Wind Direction: ${weatherResponse.current.wind_dir}</li>
+                        <li>Wind Speed (mph): ${weatherResponse.current.wind_mph}</li>
+                        <li>UV: ${weatherResponse.current.uv}</li>
                     </ul>
                 `
             }
