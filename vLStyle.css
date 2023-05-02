@@ -461,7 +461,7 @@ p {
 }
 
 /* FOR SERVICES AND RESOURCES PAGES - CARDS */
-.services-section, .resources-section {
+.services-section, .resources-section, .blog-section {
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -470,16 +470,16 @@ p {
     padding: 0 3rem;
 }
 
-.resources-section .res-card-image, .services-section .ser-card-image {
+.resources-section .res-card-image, .services-section .ser-card-image, .blog-section .blog-card-image {
     height: 100%;
     transition: ease .2s;
 }
 
-.resources-section .res-card-image:hover, .services-section .ser-card-image:hover {
+.resources-section .res-card-image:hover, .services-section .ser-card-image:hover, .blog-section .blog-card-image:hover {
     transform: scale(1.05) rotate(-1deg);
 }
 
-.resources-section .res-card-intro, .services-section .ser-card-intro {
+.resources-section .res-card-intro, .services-section .ser-card-intro, .blog-section .blog-card-intro {
     position: relative;
     right: 0;
     bottom: 12rem;
@@ -489,7 +489,7 @@ p {
     color: #f0f0f0;
 }
 
-.resources-section .resource-card, .services-section .service-card {
+.resources-section .resource-card, .services-section .service-card, .blog-section .blog-card {
     height: 450px;
     width: 300px;
     color: #0a0a0a;
@@ -507,6 +507,54 @@ p {
 /* BLOG PAGE */
 .blog-bod .hero-bg {
     background: url(vLPics/hero-blog-pexels-jess-bailey-designs-768474.jpg);
+}
+
+.blog-bod .blog-section .blog-card img {
+    width: 100%;
+}
+
+.blog-post {
+    padding: 0 2rem;
+}
+
+.blog-post h2, .blog-post h3, .blog-post-intro {
+    text-align: center;
+}
+
+.blog-post-intro {
+    border-bottom: 1px solid #5BBA6F;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.blog-img-container {
+    background-color: #5BBA6F;
+    padding: 1rem;
+    border: 2px solid #137547;
+    border-radius: 10px;
+}
+
+.blog-img-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-img-left {
+    width: 25rem;
+    float: left;
+    margin: 1rem 2rem 1rem 0;
+}
+
+.blog-img-right {
+    width: 25rem;
+    float: right;
+    margin: 1rem 0 1rem 2rem;
+}
+
+.blog-img-container p {
+    text-align: center;
+    font-size: 1rem;
+    margin: .5rem 0 0;
 }
 
 /* CONTACT PAGE */
@@ -765,7 +813,7 @@ p {
     }
 }
 
-@media(max-width: 750px) {
+@media(max-width: 810px) {
     .overlay.active {
         display: block;
     }
@@ -823,6 +871,21 @@ p {
     }
     .services-section .service-card {
         margin-bottom: 2rem;
+    }
+    /* BLOG */
+    .blog-img-container  {
+        width: 95%;
+        margin: 2rem 0;
+    }
+    .blog-img-right {
+        position: relative;
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+    .blog-img-left {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
     .alpha-cards {
         padding: 0;

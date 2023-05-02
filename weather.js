@@ -64,49 +64,30 @@ submit.addEventListener('click', () => {
                 const weatherResponse = JSON.parse(this.responseText);
                 console.log(weatherResponse);
                 displayWeather.innerHTML = `
-                <ul>
-                    <li>Local Time: ${weatherResponse.location.localtime}</li>
-                    <li>Timezone: ${weatherResponse.location.tz_id}</li>
-                </ul>
+
                 <div class="forecast-card">
-                    <h5>Today: ${weatherResponse.forecast.forecastday[0].date}</h5>
-                    <img src="${weatherResponse.forecast.forecastday[0].day.condition.icon}">
-                    <p>${weatherResponse.forecast.forecastday[0].day.condition.text}</p>
-                    <ul>
-                        <li>Avg Temp: ${weatherResponse.forecast.forecastday[0].day.avgtemp_c}</li>
-                        <li>Avg Visibility: ${weatherResponse.forecast.forecastday[0].day.avgvis_miles}</li>
-                        <li>Precipitation (mm): ${weatherResponse.forecast.forecastday[0].day.totalprecip_mm}</li>
-                        <li>Wind Speed (mph): ${weatherResponse.forecast.forecastday[0].day.maxwind_mph}</li>
-                        <li>UV: ${weatherResponse.forecast.forecastday[0].day.uv}</li>
-                    </ul>
-                    <button class="hour-button">Hourly Forecast</button>
+                    <div class="fcard-top">
+                        <h5>Today: ${weatherResponse.forecast.forecastday[0].date}</h5>
+                        <p>${weatherResponse.forecast.forecastday[0].day.condition.text}</p>
+                    </div>
+
+                    <div class="fcard-body">
+                        <div class="fcard-left">
+                            <img src="${weatherResponse.forecast.forecastday[0].day.condition.icon}">
+                        </div>
+                        <div class="fcard-right">
+                            <ul>
+                                <li>Avg Temp: ${weatherResponse.forecast.forecastday[0].day.avgtemp_c}</li>
+                                <li>Avg Visibility: ${weatherResponse.forecast.forecastday[0].day.avgvis_miles}</li>
+                                <li>Precipitation (mm): ${weatherResponse.forecast.forecastday[0].day.totalprecip_mm}</li>
+                                <li>Wind Speed (mph): ${weatherResponse.forecast.forecastday[0].day.maxwind_mph}</li>
+                                <li>UV: ${weatherResponse.forecast.forecastday[0].day.uv}</li>
+                            </ul>
+                            <button class="hour-button">Hourly Forecast</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="forecast-card">
-                    <h5>Tomorrow: ${weatherResponse.forecast.forecastday[1].date}</h5>
-                    <img src="${weatherResponse.forecast.forecastday[1].day.condition.icon}">
-                    <p>${weatherResponse.forecast.forecastday[1].day.condition.text}</p>
-                    <ul>
-                        <li>Avg Temp: ${weatherResponse.forecast.forecastday[1].day.avgtemp_c}</li>
-                        <li>Avg Visibility: ${weatherResponse.forecast.forecastday[1].day.avgvis_miles}</li>
-                        <li>Precipitation (mm): ${weatherResponse.forecast.forecastday[1].day.totalprecip_mm}</li>
-                        <li>Wind Speed (mph): ${weatherResponse.forecast.forecastday[1].day.maxwind_mph}</li>
-                        <li>UV: ${weatherResponse.forecast.forecastday[1].day.uv}</li>
-                    </ul>
-                    <button class="hour-button">Hourly Forecast</button>
-                </div>
-                <div class="forecast-card">
-                    <h5>Day After: ${weatherResponse.forecast.forecastday[2].date}</h5>
-                    <img src="${weatherResponse.forecast.forecastday[2].day.condition.icon}">
-                    <p>${weatherResponse.forecast.forecastday[2].day.condition.text}</p>
-                    <ul>
-                        <li>Avg Temp: ${weatherResponse.forecast.forecastday[2].day.avgtemp_c}</li>
-                        <li>Avg Visibility: ${weatherResponse.forecast.forecastday[2].day.avgvis_miles}</li>
-                        <li>Precipitation (mm): ${weatherResponse.forecast.forecastday[2].day.totalprecip_mm}</li>
-                        <li>Wind Speed (mph): ${weatherResponse.forecast.forecastday[2].day.maxwind_mph}</li>
-                        <li>UV: ${weatherResponse.forecast.forecastday[2].day.uv}</li>
-                    </ul>
-                    <button class="hour-button">Hourly Forecast</button>
-                </div>
+
                 `
             }
         };
