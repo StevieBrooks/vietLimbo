@@ -1,12 +1,13 @@
 import Header from "./components/Header"
-import Hero from "./components/Hero"
+import Body from "./components/Body"
 import Footer from "./components/Footer"
+import './App.css'
 
 export default function App() {
   return (<>
   
       <Header />
-      <Hero />
+      <Body />
       <Footer />
 
   </>

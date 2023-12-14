@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+
+
+body {
+    background-color: #FCFFFC;
+    height: 100vh;
+}
+
+h2 {
+    font-family: 'Holtwood One SC', serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hero-container {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: -10px 10px 0 white, 
+                -11px 11px 0 black, 
+                -20px 20px 0 white, 
+                -21px 21px 0 black;
+}
