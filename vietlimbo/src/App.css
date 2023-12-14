@@ -21,3 +21,11 @@ h2 {
                 -20px 20px 0 white, 
                 -21px 21px 0 black;
 }
+
+.free-lesson-cta, .social-proof {
+    background-color: #FCFFFC;
+    opacity: 1;
+    background-image:  radial-gradient(#2BA84A 1.85px, transparent 1.85px), radial-gradient(#2BA84A 1.85px, #FCFFFC 1.85px);
+    background-size: 74px 74px;
+    background-position: 0 0,37px 37px;
+}

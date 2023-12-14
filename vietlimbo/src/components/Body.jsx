@@ -1,11 +1,12 @@
 import hero1 from "../images/hero1.jpg"
 import hero2 from "../images/hero2.jpg"
 import hero3 from "../images/hero3.jpg"
+import calendar from "../images/calendar.png"
 
 export default function Body() {
     return (<>
     
-        <section className="hero bg-primary px-5 pt-5 pb-[10rem]">
+        <section className="hero bg-primary px-5 pt-5 pb-[15rem]">
             <div className="hero-container bg-secondary m-5 p-3 max-w-[80rem] mx-auto">
                 <h2 className=" text-white my-5 px-5 tracking-wide">TAKING THE BABY STEPS TO BECOME A MASTER VIETNAMESE SPEAKER</h2>
                 <p className=" text-white text-lg mb-5 p-5">Hello and the warmest of welcomes to Viet Limbo. Let me begin by saying that I'm ecstatic to accommodate you here and sincerely hope that we can grow together. By coming here, you are already helping me, therefore, I feel it is my duty and my honour to go above and beyond to help you.</p>
@@ -27,17 +28,17 @@ export default function Body() {
             </div>
         </section>
 
-        <section className="free-lesson-cta">
-            <div className="cta-container">
-                <div className="img-container">
-                    <img src="" alt="" />
+        <section className="free-lesson-cta px-5">
+            <div className="cta-container bg-white flex items-center justify-around w-4/5 max-w-[70rem] mx-auto border-4 p-5 pb-[2rem] rounded-xl relative bottom-[8rem]">
+                <div className="img-container px-3">
+                    <img src={calendar} alt="" />
                 </div>
-                <div className="text-container">
+                <div className="text-container px-5 py-2">
                     <h2>Book a Free Lesson</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi necessitatibus et vero, nulla mollitia facilis cupiditate quasi perferendis officiis quisquam.</p>
+                    <p>The first lesson is always free. Besides, it's more of an informal chat than anything else, so charging wouldn't be proper. That being said, one of the objectives of these get-to-know sessions is that you leave with something, even if it's just one new word. I sincerely look forward to working with you.</p>
                 </div>
                 <div className="button-container">
-                    <button>Book lesson!</button>
+                    <button className="border-2 bg-white hover:bg-primary px-5 py-2 rounded-md">Book lesson!</button>
                 </div>
             </div>
         </section>
