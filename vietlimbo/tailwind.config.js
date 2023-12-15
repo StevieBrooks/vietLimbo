@@ -11,6 +11,10 @@ module.exports = {
       "secblack": "#2D3A3A",
       "white": "#FCFFFC"
     },
+    screens: {
+      "phone": "400px",
+      "tablet": "700px",
+    }
   },
   plugins: [],
 }

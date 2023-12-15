@@ -11,27 +11,42 @@ body {
 h1 {
     font-family: 'Agbalumo';
     font-size: 1.7rem;
+    color: #2D3A3A;
 }
 
 h2 {
     font-family: 'Holtwood One SC', serif;
     font-size: 2rem;
     text-align: center;
+    color: #2D3A3A;
+}
+
+p {
+    color: #2D3A3A;
+}
+
+.brand:hover .logo {
+    background-color: #248232;
+    color: #FCFFFC;
+}
+
+.brand:hover h1 {
+    color: #FCFFFC;
 }
 
 .hero-container {
-    border: 2px solid black;
+    border: 2px solid #2D3A3A;
     border-radius: 10px;
-    box-shadow: -10px 10px 0 white, 
-                -11px 11px 0 black, 
-                -20px 20px 0 white, 
-                -21px 21px 0 black;
+    box-shadow: -10px 10px 0 #FCFFFC, 
+                -11px 11px 0 #2D3A3A, 
+                -20px 20px 0 #FCFFFC, 
+                -21px 21px 0 #2D3A3A;
 }
 
 .free-lesson-cta, .social-proof {
     background-color: #FCFFFC;
     opacity: 1;
-    background-image:  radial-gradient(#2BA84A 1.85px, transparent 1.85px), radial-gradient(#2BA84A 1.85px, #FCFFFC 1.85px);
+    background-image:  radial-gradient(#2BA84A 2px, transparent 2px), radial-gradient(#2BA84A 2px, #FCFFFC 2px);
     background-size: 74px 74px;
-    background-position: 0 0,37px 37px;
+    background-position: 0 0,35px 35px;
 }
