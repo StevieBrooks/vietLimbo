@@ -1,23 +1,46 @@
+// PAGES
 import Header from "./components/Header"
 import Body from "./components/Body"
 import Footer from "./components/Footer"
+import AboutPage from "./components/AboutPage"
+import ServicesPage from "./components/ServicesPage"
+import ResourcesPage from "./components/ResourcesPage"
+import ContactPage from "./components/ContactPage"
+
+
 import './App.css'
-import { useState, useRef } from "react"
+import { useState } from "react"
 import BodyContext from "./contextFile"
 
 export default function App() {
 
-  const [bodyActive, setBodyActive] = useState(true)
-  const [aboutActive, setAboutActive] = useState(false)
-  const [servicesActive, setServicesActive] = useState(false)
-  const [resourcesActive, setResourcesActive] = useState(false)
-  const [contactActive, setContextActive] = useState(false)
+  const [pageActive, setPageActive] = useState("body")
+
+  const pageFunction = () => {
+    switch(pageActive) {
+      case "about":
+        return <AboutPage />;
+        break;
+      case "services":
+        return <ServicesPage />;
+        break;
+      case "resources":
+        return <ResourcesPage />;
+        break;
+      case "contact":
+        return <ContactPage />;
+        break;
+      default:
+        return <Body />;
+        break;
+    }
+  }
 
   return (<>
 
-    <BodyContext.Provider value={[bodyActive, setBodyActive, aboutActive, setAboutActive, servicesActive, setServicesActive, resourcesActive, setResourcesActive, contactActive, setContextActive]}>
+    <BodyContext.Provider value={[pageActive, setPageActive]}>
       <Header />
-      {bodyActive && <Body />}
+      {pageFunction()}
       <Footer />
     </BodyContext.Provider>
 
