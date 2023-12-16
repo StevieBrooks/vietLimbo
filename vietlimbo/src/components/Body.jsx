@@ -105,21 +105,22 @@ export default function Body() {
         </section>
 
         <section className="about-intro">
-            <div className="intro-container">
-                <div className="img-container">
-                    <img src={avatar} alt="" className="w-80" />
+            <div className="intro-container max-w-[70rem] mx-auto">
+                <div className="img-container relative bottom-24 ms-[3rem] border-4 border-secblack rounded-lg w-fit p-3 bg-white z-10">
+                    <img src={avatar} alt="" className="w-80 rounded-lg" />
                 </div>
-                <div className="text-container">
-                    <h2>So you can put a face to the name</h2>
-                    <p>As Viet Limbo is still in its infancy, please don't be surprised or demotivated if a few teething problems occur. My husband and I are hard at work to build a unique and valuable ensemble of resources to aid you learn Vietnamese. As you may be aware already, Vietnamese pronunciation is no easy feat. So I would like to invite you to check out the resources tab in the main menu. The Viet Limbo team - well, my hubby and I - have put together some vocal cards to help you master the correct pronunciation of the Vietnamese alphabet.</p>
-                    <p>My husband is currently training to be a software developer and as his skillset grows, so will the complexity and value of this site. It is our humble ambition to develop one of the finest resources of Vietnamese language education on the market. Incidentally, should you have any suggestions or criticisms, I would be more than delighted to hear them. For now, please remember that learning this melifluous language is not a sprint, it's a marathon. Take your time and I hope you enjoy this journey as much as I do. Please don't hesitate to reach out if you need anything. Your friend and Vietnamese mentor, Lily.</p>
+                <div className="text-container relative bottom-48 mx-5 border-4 border-secblack rounded-lg p-5 bg-white">
+                    <h2 className="w-2/5 float-right ms-3 mb-3">So you can put a face to the name</h2>
+                    <p className="mt-[6rem] mb-3 text-lg">As Viet Limbo is still in its infancy, please don't be surprised or demotivated if a few teething problems occur. I'm hard at work trying to build a unique and valuable collection of resources to aid you learn Vietnamese. As you may be aware already, Vietnamese pronunciation is no easy feat. So I would like to invite you to check out the resources tab in the main menu. There is a button just above too.</p>
+                    <p className="text-lg mb-5">It is my humble ambition to develop one of the finest resources of Vietnamese language education on the market. Incidentally, should you have any suggestions or criticisms, I would be more than delighted to hear them. For now, please remember that learning this melifluous language is not a sprint, it's a marathon. Take your time and I hope you enjoy this journey as much as I do. Please don't hesitate to reach out if you need anything. Your friend and Vietnamese mentor, Lily.</p>
                 </div>
             </div>
         </section>
 
-        <section className="contact-intro">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, dolor. Doloribus qui ad rerum eligendi quia, fugit eveniet tempora omnis corporis ullam officiis repellat sequi unde, similique dolor! Incidunt voluptatem repellat ipsam ab tenetur architecto id dolorum nam eius temporibus.</p>
-            <button>Get in touch!</button>
+        <section className="contact-intro  text-center bg-white p-5 border-t-8 border-primary">
+            <h2 className="p-5">I'm here if you need anything</h2>
+            <p className="text-lg">As I have already mentioned, the first lesson is always free. Booking an informal chat will give you the chance to ask any burning questions and help you decide if we're the right fit. There is absolutely no obligation to book anything further. In the meantime, I look forward to hearing from you.</p>
+            <button className="border-2 border-secblack bg-white hover:bg-secondary text-lg font-bold px-5 py-2 my-[2rem] rounded-md hover:text-white">Get in touch!</button>
         </section>
         
     </>)
