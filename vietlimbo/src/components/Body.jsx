@@ -3,8 +3,12 @@ import hero2 from "../images/hero2.jpg"
 import hero3 from "../images/hero3.jpg"
 import calendar from "../images/calendar.png"
 import avatar from "../images/lily1.png"
+import { useContext } from "react"
+import BodyContext from "../contextFile"
 
 export default function Body() {
+
+    const [bodyActive, setBodyActive] = useContext(BodyContext)
 
     const studentReviews = [
         {

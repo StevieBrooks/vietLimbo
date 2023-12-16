@@ -1,7 +1,7 @@
 export default function Footer() {
     return (<>
     
-        <footer className="flex justify-between items-center bg-primary py-5">
+        <footer className="flex justify-between items-center bg-primary py-5 fixed bottom-0 w-full">
             <div className="brand-container">
             <div className="brand flex items-center ms-3 cursor-pointer">
                 <span className="logo bg-white text-secblack text-2xl font-bold font-serif px-1 rounded border-2 shadow-md">V</span>
