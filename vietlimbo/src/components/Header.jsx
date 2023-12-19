@@ -50,7 +50,7 @@ export default function Header() {
                 </ul>
             </nav>
             
-            <button className="bg-white hover:bg-secondary px-3 py-2 border border-2 border-secblack rounded-lg me-2 text-lg text-secblack hover:text-white font-bold tracking-wider" onClick={contactFunction}>Contact Me!</button>
+            <button className="bg-white hover:bg-secondary px-3 py-2 border border-2 border-secblack rounded-lg me-2 text-secblack hover:text-white font-bold tracking-wider" onClick={contactFunction}>Contact Me!</button>
 
         </header>
     

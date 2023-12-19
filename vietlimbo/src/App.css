@@ -21,8 +21,13 @@ h2 {
     color: #2D3A3A;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 p {
     color: #2D3A3A;
+    font-size: 1.2rem;
 }
 
 .brand:hover .logo {
